@@ -2,7 +2,7 @@
 
 ## 1. Project summary
 
-This document is the authoritative product-scope specification for the professional portfolio of **Md. Jakir Hossain**, a MERN Stack and Next.js web developer based in Dhaka, Bangladesh. His confirmed current professional background is **Deputy Manager (Shipping), Sunman Group**; employment dates and detailed responsibilities remain pending user confirmation.
+This document is the authoritative product-scope specification for the professional portfolio of **Md. Jakir Hossain**, a **MERN Stack & Next.js Web Developer** based in Dhaka, Bangladesh. His confirmed current professional background is **Deputy Manager (Shipping), Sunman Group**; employment dates and detailed responsibilities remain pending user confirmation.
 
 The portfolio will present verified skills and project work to prospective clients, recruiters, remote employers, developers, and professional connections. It must communicate technical competence, reliability, professional maturity, and honest experience without overstating project status or outcomes.
 
@@ -133,7 +133,7 @@ These URLs must not be shortened, substituted, or altered without user approval.
 | Additional genuine projects | Pending content | Featured Projects and `/projects`. |
 | Contact recipient and public email | Pending decision | Contact form and optional public contact display. |
 
-Detailed content status is maintained in `docs/CONTENT.md`. Missing content must be labelled `TBD`, `Pending user confirmation`, or `Asset required`; it must never be silently invented.
+Detailed content status and repository-evidence notes are maintained in the authoritative content inventory at `docs/CONTENT.md`. Missing content must use the inventory's status system and must never be silently invented.
 
 ## 12. Functional requirements
 
