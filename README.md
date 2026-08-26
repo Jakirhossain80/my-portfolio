@@ -4,15 +4,14 @@ Technical foundation for the professional portfolio of Md. Jakir Hossain, a MERN
 
 ## Current milestone
 
-Foundation setup is in progress. The current `/` route is a temporary confirmation page; later portfolio modules have not been implemented.
+Phase 1 requirements finalization is complete. Dependency and baseline validation remains in progress, and the current `/` route is still a temporary foundation page. The final homepage, project routes, contact functionality, and design system have not been implemented.
 
 ## Stack and prerequisites
 
-Next.js App Router, React, strict TypeScript, Tailwind CSS, ESLint, Geist fonts, and pnpm. Use a current Node.js LTS release and pnpm 11 or a compatible current version.
+Next.js App Router, React, strict TypeScript, Tailwind CSS, ESLint, Geist fonts, and pnpm. Use a current Node.js LTS release and the repository-declared pnpm version.
 
 ```bash
 corepack enable
-corepack prepare pnpm@latest --activate
 pnpm install
 pnpm dev
 ```
@@ -31,5 +30,5 @@ pnpm build
 
 - [Requirements](docs/REQUIREMENTS.md)
 - [Design system](docs/DESIGN_SYSTEM.md)
-- [Approved content](docs/CONTENT.md)
+- [Content inventory](docs/CONTENT.md)
 - [Implementation plan](docs/IMPLEMENTATION_PLAN.md)
