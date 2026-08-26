@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="foundation-shell">
+    <main className="foundation-shell" id="main-content">
       <div className="foundation-content">
         <p className="foundation-label">Portfolio foundation</p>
         <h1>Md. Jakir Hossain</h1>
