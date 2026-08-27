@@ -4,7 +4,7 @@ Technical foundation for the professional portfolio of Md. Jakir Hossain, a MERN
 
 ## Current milestone
 
-Phase 1 requirements finalization, Phase 2 content inventory preparation, the Phase 3 route foundation, and the Phase 4 project architecture are complete. The current `/` route remains a temporary foundation page; final page designs, approved case-study content, and contact delivery are not implemented.
+Phase 1 requirements finalization through Phase 5 foundation verification are complete. Development standards and the Phase 7 design-system foundation are implemented; final production-build verification remains dependent on Google Fonts network access. The current `/` route remains a temporary foundation page; final page designs, approved case-study content, and contact delivery are not implemented.
 
 The route foundation includes:
 
@@ -28,7 +28,7 @@ Folders are added only when they have a real responsibility. The sitemap remains
 
 ## Stack and prerequisites
 
-Next.js App Router, React, strict TypeScript, Tailwind CSS, ESLint, Geist fonts, and pnpm. Use a current Node.js LTS release and the repository-declared pnpm version.
+Next.js App Router, React, strict TypeScript, Tailwind CSS, ESLint, Geist fonts, and pnpm. The verified foundation uses Next.js 16.3.3, React 19.2.8, TypeScript 6.0.3, Tailwind CSS 4.3.3, ESLint 9.39.5, Node.js 22.23.1, and pnpm 11.5.2. The lockfile is authoritative; do not upgrade these versions without an approved requirement.
 
 ```bash
 corepack enable
@@ -41,10 +41,13 @@ Open <http://localhost:3000>.
 ## Validation
 
 ```bash
+pnpm install --frozen-lockfile
 pnpm lint
 pnpm typecheck
 pnpm build
 ```
+
+Development conventions, naming rules, validation expectations, and accessibility-aware implementation guidance are documented in [Development standards](docs/DEVELOPMENT_STANDARDS.md). Editor defaults are shared through `.editorconfig`; ESLint remains the automated code-quality tool, with no separate formatter dependency.
 
 ## Planning documents
 
@@ -52,3 +55,4 @@ pnpm build
 - [Design system](docs/DESIGN_SYSTEM.md)
 - [Content inventory](docs/CONTENT.md)
 - [Implementation plan](docs/IMPLEMENTATION_PLAN.md)
+- [Development standards](docs/DEVELOPMENT_STANDARDS.md)
