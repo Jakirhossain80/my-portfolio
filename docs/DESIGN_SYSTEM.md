@@ -62,3 +62,13 @@ Use restrained hover effects and purposeful animation, never rely on hover alone
 ## Reduced motion
 
 When `prefers-reduced-motion: reduce` is active, smooth scrolling is disabled, animations run once at effectively zero duration, and transitions become effectively immediate. Essential content must never depend on animation for visibility or comprehension.
+
+## Foundational components
+
+Phase 8 provides reusable layout primitives under `src/components/layout`, interface primitives under `src/components/ui`, and shared application components under `src/components/common`. These components consume the semantic tokens above and remain presentation-focused; they do not define portfolio-section content.
+
+- `Container`, `Section`, and `SectionHeading` establish consistent widths, section spacing, surfaces, and heading hierarchy.
+- `Button`, `IconButton`, `Badge`, and `Card` provide typed visual primitives with native semantics and shared interaction states.
+- `SocialLink`, `TechnologyBadge`, and `ExternalLink` cover common portfolio display patterns without fixing them to specific content records or icon libraries.
+- `ThemeToggle` cycles through system, light, and dark preferences, persists the selection, synchronizes it across tabs, and uses a pre-paint initializer to prevent a theme flash.
+- `SkipToContent` is the canonical skip-link component; the earlier `SkipLink` export remains as a compatibility alias.

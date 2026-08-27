@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { SkipLink } from "@/components/common/skip-link";
+import { SkipToContent } from "@/components/common/skip-to-content";
+import { ThemeInitializer } from "@/components/common/theme-initializer";
 import { siteConfig } from "@/lib/site";
 
 import "./globals.css";
@@ -16,9 +17,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <ThemeInitializer />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <SkipLink />
+        <SkipToContent />
         {children}
       </body>
     </html>
