@@ -30,7 +30,7 @@ export function buttonClassName({
   variant?: ButtonVariant;
 } = {}) {
   return classNames(
-    "inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border font-semibold no-underline transition-[background-color,border-color,color,filter,box-shadow] duration-[var(--duration-fast)] ease-standard motion-reduce:transition-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+    "inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border font-semibold no-underline transition-[background-color,border-color,color,filter,box-shadow,transform] duration-[var(--duration-fast)] ease-standard active:translate-y-px motion-reduce:transform-none motion-reduce:transition-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
     buttonVariants[variant],
     buttonSizes[size],
     className,

@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 
 export function About() {
   return (
-    <Section aria-labelledby="about-heading" id="about" surface="alternate">
+    <Section aria-labelledby="about-heading" className="section-reveal" id="about" surface="alternate">
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(18rem,0.65fr)] lg:gap-16">
           <div>

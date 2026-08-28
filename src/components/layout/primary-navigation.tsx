@@ -210,9 +210,9 @@ export function PrimaryNavigation() {
 
       <div
         className={classNames(
-          "absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg xl:hidden",
-          isMenuOpen ? "block" : "hidden",
+          "mobile-navigation-panel absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg xl:hidden",
         )}
+        hidden={!isMenuOpen}
         id="mobile-navigation"
         ref={mobileMenuRef}
       >

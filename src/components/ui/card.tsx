@@ -17,7 +17,7 @@ export function Card({ className, padding = "md", ...props }: CardProps) {
   return (
     <div
       className={classNames(
-        "rounded-xl border border-border bg-surface shadow-sm",
+        "rounded-xl border border-border bg-surface shadow-sm transition-[background-color,border-color,box-shadow] duration-[var(--duration-normal)] ease-standard motion-reduce:transition-none",
         paddingClasses[padding],
         className,
       )}

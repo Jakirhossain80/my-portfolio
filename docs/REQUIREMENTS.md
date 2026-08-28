@@ -131,7 +131,7 @@ These URLs must not be shortened, substituted, or altered without user approval.
 | Development-process wording | Pending user confirmation | Development Process. |
 | CareerBridge features and current status | Verification required | Project cards and case study. |
 | Additional genuine projects | Pending content | Featured Projects and `/projects`. |
-| Contact recipient and public email | Pending decision | Contact form and optional public contact display. |
+| Contact recipient and public email | Public email confirmed; form recipient pending | Public contact display and future form delivery configuration. |
 
 Detailed content status and repository-evidence notes are maintained in the authoritative content inventory at `docs/CONTENT.md`. Missing content must use the inventory's status system and must never be silently invented.
 
@@ -258,7 +258,7 @@ Future enhancements must not be treated as current commitments.
 | Process copy | Pending user confirmation | Finalizing that section. Skills and Services content are confirmed by their implementation briefs. |
 | Additional CareerBridge screenshots, verified features, and current status | Partially verified; additional evidence pending | Expanding the case study beyond the verified Featured Projects summary and public-homepage thumbnail. |
 | Additional genuine projects | Pending content | Populating more than the CareerBridge entry. |
-| Contact recipient email | Pending decision | Enabling form delivery or displaying email. |
+| Contact recipient email | Pending decision; public email is confirmed separately | Enabling form delivery. |
 | Email-delivery provider | Pending decision | Contact backend implementation. |
 | Contact fields and length limits | Pending decision | Form implementation. |
 | Spam-protection and privacy requirements | Pending decision | Enabling public submissions. |

@@ -162,6 +162,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.theme-transition {
+  transition:
+    background-color var(--duration-normal) var(--ease-token-standard),
+    color var(--duration-normal) var(--ease-token-standard);
+}
+
 button, input, textarea, select { font: inherit; }
 :focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
 ::selection { background: var(--accent); color: var(--accent-foreground); }
@@ -199,6 +205,41 @@ h1 { margin: 0; font-size: var(--font-size-display); line-height: var(--line-hei
 
 @keyframes hero-reveal {
   from { opacity: 0; transform: translateY(0.75rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-navigation-panel {
+  transition:
+    display var(--duration-normal) allow-discrete,
+    opacity var(--duration-normal) var(--ease-token-standard),
+    transform var(--duration-normal) var(--ease-token-standard);
+}
+
+.mobile-navigation-panel[hidden] {
+  display: none;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+}
+
+@starting-style {
+  .mobile-navigation-panel:not([hidden]) {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .section-reveal {
+      animation: section-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 90%;
+    }
+  }
+}
+
+@keyframes section-reveal {
+  from { opacity: 0.72; transform: translateY(0.75rem); }
   to { opacity: 1; transform: translateY(0); }
 }
 .route-shell { min-height: 100vh; padding: clamp(2rem, 6vw, 5rem) var(--page-gutter); }

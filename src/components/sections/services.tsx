@@ -12,7 +12,12 @@ import { getSkillById } from "@/utils/skills";
 
 export function Services() {
   return (
-    <Section aria-labelledby="services-heading" id="services" surface="alternate">
+    <Section
+      aria-labelledby="services-heading"
+      className="section-reveal"
+      id="services"
+      surface="alternate"
+    >
       <Container>
         <SectionHeading
           description="Focused development support for building, connecting, and repairing modern web application features. Scope and deliverables are agreed before work begins."

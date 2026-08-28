@@ -28,7 +28,7 @@ Available Tailwind color utilities include `bg-background`, `bg-surface`, `bg-su
 - System preference is the default and uses `prefers-color-scheme`.
 - `data-theme="light"` or `data-theme="dark"` on the root element provides an explicit override for the future theme control.
 - The browser `color-scheme` matches the active theme so native controls render appropriately.
-- `ThemeProvider` manages the persisted preference for interactive consumers, while a `beforeInteractive` initializer sets the root attribute before hydration to avoid a theme flash.
+- `ThemeProvider` manages the persisted Light, Dark, or System preference for interactive consumers, while a `beforeInteractive` initializer sets the root attribute before hydration to avoid an incorrect-theme flash. System mode leaves the root override unset so the CSS media query follows operating-system changes without JavaScript-dependent rendering.
 
 ## Typography
 
@@ -62,6 +62,12 @@ Use restrained hover effects and purposeful animation, never rely on hover alone
 ## Reduced motion
 
 When `prefers-reduced-motion: reduce` is active, smooth scrolling is disabled, animations run once at effectively zero duration, and transitions become effectively immediate. Essential content must never depend on animation for visibility or comprehension.
+
+## Animation and interaction behavior
+
+Phase 26 keeps motion CSS-first and limited to feedback or orientation. Buttons use a one-pixel active press, navigation links retain explicit hover/current/active states, and project cards keep their restrained four-pixel lift and two-percent image scale with matching `focus-within` behavior. The existing short Hero entrance remains the only staggered initial animation.
+
+Homepage sections use a progressive scroll-linked reveal only when the browser supports view timelines and the visitor has not requested reduced motion. The starting state remains substantially visible, unsupported browsers receive fully visible static content, and no JavaScript or client boundary is added for the effect. The mobile menu uses the native `hidden` state for accessibility and a discrete CSS transition where supported; unsupported browsers retain immediate open/close behavior. Theme surfaces transition only background and text colors over the normal duration. No animation changes layout dimensions or delays interaction.
 
 ## Global navigation
 
@@ -103,6 +109,10 @@ The Professional Experience section separates independent technical project expe
 
 The Phase 20 Development Process section presents six approved stages as a semantic ordered list. Equal-height cards use visible step labels, concise summaries, and two concrete expectations per stage; the grid moves from one to two to three columns without changing the source order. The final stage makes deployment, handover, known limitations, and scope-limited post-delivery support explicit. The section is static, uses semantic tokens, and adds no client-side behavior or decorative motion.
 
+## Global footer
+
+The Phase 24 global footer uses the root layout so it appears once across every route. A responsive three-column area presents identity, essential Home and Projects navigation, and direct email, GitHub, and LinkedIn contact paths; it stacks into a clear reading order on smaller screens. The copyright year is generated at render time. Links use visible text, shared focus treatment, and approximately 44-pixel targets, while external profile links retain their new-tab indication. A back-to-top control is omitted because it is optional and would not add enough value to this compact footer.
+
 ## Foundational components
 
 Phase 8 provides reusable layout primitives under `src/components/layout`, interface primitives under `src/components/ui`, and shared application components under `src/components/common`. These components consume the semantic tokens above and remain presentation-focused; they do not define portfolio-section content.
@@ -110,5 +120,5 @@ Phase 8 provides reusable layout primitives under `src/components/layout`, inter
 - `Container`, `Section`, and `SectionHeading` establish consistent widths, section spacing, surfaces, and heading hierarchy.
 - `Button`, `IconButton`, `Badge`, and `Card` provide typed visual primitives with native semantics and shared interaction states.
 - `SocialLink`, `TechnologyBadge`, and `ExternalLink` cover common portfolio display patterns without fixing them to specific content records or icon libraries.
-- `ThemeToggle` cycles through system, light, and dark preferences, persists the selection, synchronizes it across tabs, and uses a pre-paint initializer to prevent a theme flash.
+- `ThemeToggle` exposes Light, Dark, and System through a labelled native select, persists the selection, and synchronizes it across tabs. The pre-paint initializer applies explicit preferences before hydration; System mode continues to follow `prefers-color-scheme` through CSS.
 - `SkipToContent` is the canonical skip-link component; the earlier `SkipLink` export remains as a compatibility alias.

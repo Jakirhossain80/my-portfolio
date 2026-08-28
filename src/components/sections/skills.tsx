@@ -29,7 +29,7 @@ function skillsForTier(skills: readonly Skill[], tier: SkillTier) {
 
 export function Skills() {
   return (
-    <Section aria-labelledby="skills-heading" id="skills">
+    <Section aria-labelledby="skills-heading" className="section-reveal" id="skills">
       <Container>
         <SectionHeading
           description="A practical full-stack toolkit developed through structured learning and project work. Primary labels indicate focus, not a claim of mastery."

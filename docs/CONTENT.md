@@ -88,7 +88,7 @@ Restrictions:
 
 | Key | Placement | Current value | Status | Source | Notes or restrictions |
 | --- | --- | --- | --- | --- | --- |
-| `publicEmail` | Contact, résumé/contact action, form destination, structured metadata if approved | Not supplied | `Pending user confirmation` | Current Phase 2 brief | Do not infer from Git, GitHub, environment files, package metadata, or local configuration. |
+| `publicEmail` | Contact, Footer, résumé/contact action, structured metadata if approved | `jakir.devbd@gmail.com` | `Confirmed` | Phase 24 brief | Public contact address. This does not independently approve it as the form-delivery recipient. |
 | `contactFormRecipient` | Server-only contact configuration | Not selected | `Pending user confirmation` | Requirements | May equal the public email but must be approved separately. |
 | `contactProvider` | Server integration | Not selected | `Pending user confirmation` | Requirements | Keep provider-neutral. Do not configure credentials in this phase. |
 | `phoneNumber` | Any public content | Empty | `Do not invent` | No authoritative source | Not required unless the user explicitly approves one. |
@@ -386,7 +386,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - Approved professional photograph.
 - Final approved résumé.
 - Additional genuine CareerBridge case-study screenshots.
-- Public email and contact-form destination/provider details.
+- Contact-form destination/provider details.
 - Hero copy and availability wording.
 - Employment dates/responsibilities and optional education, certification, and language details.
 - Additional genuine projects.
@@ -395,7 +395,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 
 ## 27. Pending user-information checklist
 
-- [ ] Supply the public portfolio email address, or confirm that no email should be displayed.
+- [x] Supply the public portfolio email address, or confirm that no email should be displayed.
 - [ ] Supply the final approved résumé file.
 - [ ] Copy/supply the approved professional photograph and confirm publication permission.
 - [ ] Approve or revise the short Hero introduction.

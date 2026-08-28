@@ -6,7 +6,7 @@ import { processSteps } from "@/data/process";
 
 export function Process() {
   return (
-    <Section aria-labelledby="process-heading" id="process">
+    <Section aria-labelledby="process-heading" className="section-reveal" id="process">
       <Container>
         <SectionHeading
           description="A structured path from the first conversation to an agreed delivery, with decisions and expectations made clear at each stage."

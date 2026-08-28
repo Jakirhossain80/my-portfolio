@@ -32,7 +32,12 @@ export function Experience() {
   const careerBridge = getProjectBySlug("careerbridge");
 
   return (
-    <Section aria-labelledby="experience-heading" id="experience" surface="alternate">
+    <Section
+      aria-labelledby="experience-heading"
+      className="section-reveal"
+      id="experience"
+      surface="alternate"
+    >
       <Container>
         <SectionHeading
           description="Independent technical development supported by the reliability, structure, and business awareness developed in an established professional environment."

@@ -11,7 +11,11 @@ export function FeaturedProjects() {
   const featuredProjects = getFeaturedProjects();
 
   return (
-    <Section aria-labelledby="featured-projects-heading" id="featured-projects">
+    <Section
+      aria-labelledby="featured-projects-heading"
+      className="section-reveal"
+      id="featured-projects"
+    >
       <Container>
         <SectionHeading
           description="Verified portfolio work presented with transparent project status and direct links to supporting evidence."

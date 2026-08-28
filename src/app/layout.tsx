@@ -45,7 +45,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
         <ThemeProvider>
           <SkipToContent />
-          <div className="flex min-h-svh flex-col bg-background text-foreground">
+          <div className="theme-transition flex min-h-svh flex-col bg-background text-foreground">
             <SiteHeader />
             <main className="w-full flex-1" id="main-content" tabIndex={-1}>
               {children}

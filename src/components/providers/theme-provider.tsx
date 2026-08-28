@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 const themeStorageKey = "portfolio-theme";
 const themeChangeEvent = "portfolio-theme-change";
 
-export const themes = ["system", "light", "dark"] as const;
+export const themes = ["light", "dark", "system"] as const;
 
 export type Theme = (typeof themes)[number];
 
