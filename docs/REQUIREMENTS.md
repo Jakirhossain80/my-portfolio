@@ -111,7 +111,7 @@ These URLs must not be shortened, substituted, or altered without user approval.
 | --- | --- | --- | --- |
 | Professional photograph | Hero; optional About reuse | **Asset required.** No photograph is present under `public/`; only `public/images/profile/.gitkeep` exists. | User must supply the approved image. Do not fabricate a path or use a random placeholder. |
 | Résumé | Download action | **Asset required.** No résumé is present; only `public/resume/.gitkeep` exists. | User must supply the final approved file. |
-| CareerBridge screenshots | Featured Projects and case study | One genuine public-homepage thumbnail exists at `public/images/projects/careerbridge-homepage.png`; further case-study screenshots are not supplied. | Use the approved thumbnail for Featured Projects. Additional screenshots require verified, non-sensitive captures. |
+| CareerBridge screenshots | Featured Projects and case study | One genuine public-homepage thumbnail exists at `public/images/projects/careerbridge/careerbridge-homepage.jpg`; further case-study screenshots are not supplied. | Use the approved thumbnail for Featured Projects. Additional screenshots require verified, non-sensitive captures. |
 | Social-preview image | Link previews | Pending decision | Create only if specifically approved; do not derive one from unapproved assets. |
 
 ## 11. Content inventory

@@ -122,10 +122,10 @@ export const projects = [
       },
     ],
     thumbnail: {
-      src: "/images/projects/careerbridge-homepage.png",
+      src: "/images/projects/careerbridge/careerbridge-homepage.jpg",
       alt: "CareerBridge public homepage with a job-search interface",
-      width: 768,
-      height: 480,
+      width: 753,
+      height: 471,
     },
     screenshots: [],
     caseStudy: {

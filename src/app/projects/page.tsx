@@ -70,12 +70,8 @@ export default function ProjectsPage() {
 
           {projects.length > 0 ? (
             <ul className="list-none space-y-6 p-0">
-              {projects.map((project, index) => (
-                <ProjectCard
-                  imageLoading={index === 0 ? "eager" : "lazy"}
-                  key={project.id}
-                  project={project}
-                />
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
               ))}
             </ul>
           ) : (

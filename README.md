@@ -36,6 +36,10 @@ Folders are added only when they have a real responsibility.
 
 Project content is centralized in `src/data/projects.ts`. The reusable model distinguishes overall lifecycle status from implemented, in-progress, and planned content; records evidence status separately; references verified technologies through stable Skill IDs; and keeps future media and case-study sections explicit without placeholder claims.
 
+## Asset organization
+
+Owned visual assets live under `public/images` by purpose. Project media uses a project-specific directory such as `public/images/projects/careerbridge`; approved profile, social, and decorative assets should be added only to their corresponding directories when supplied. Keep intrinsic dimensions and concise alternative text in the typed project record, use `next/image` for responsive delivery, and do not add placeholder media for missing assets.
+
 ## Stack and prerequisites
 
 Next.js App Router, React, strict TypeScript, Tailwind CSS, ESLint, Geist fonts, and pnpm. The verified foundation uses Next.js 16.3.3, React 19.2.8, TypeScript 6.0.3, Tailwind CSS 4.3.3, ESLint 9.39.5, Node.js 22.23.1, and pnpm 11.5.2. The lockfile is authoritative; do not upgrade these versions without an approved requirement.

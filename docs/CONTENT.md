@@ -324,7 +324,7 @@ A genuine 768 × 480 capture of the public CareerBridge homepage was added for t
 
 | Key | Path | Page/feature | Format | Dimensions | Suggested placement | Alt-text draft | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `careerbridgeThumbnail` | `/images/projects/careerbridge-homepage.png` | Public homepage hero and job-search interface | PNG | 768 × 480 | Featured Projects card | CareerBridge public homepage with a job-search interface | `Confirmed` |
+| `careerbridgeThumbnail` | `/images/projects/careerbridge/careerbridge-homepage.jpg` | Public homepage hero and job-search interface | JPEG | 753 × 471 | Featured Projects card and CareerBridge case study | CareerBridge public homepage with a job-search interface | `Confirmed` |
 
 ### Screenshot capture checklist
 

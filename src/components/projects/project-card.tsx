@@ -11,15 +11,10 @@ import { getSkillById } from "@/utils/skills";
 
 type ProjectCardProps = {
   headingLevel?: 2 | 3;
-  imageLoading?: "eager" | "lazy";
   project: Project;
 };
 
-export function ProjectCard({
-  headingLevel = 2,
-  imageLoading = "lazy",
-  project,
-}: ProjectCardProps) {
+export function ProjectCard({ headingLevel = 2, project }: ProjectCardProps) {
   const Heading = headingLevel === 2 ? "h2" : "h3";
   const TechnologyHeading = headingLevel === 2 ? "h3" : "h4";
 
@@ -35,8 +30,7 @@ export function ProjectCard({
               alt={project.thumbnail.alt}
               className="aspect-[8/5] h-auto w-full object-cover object-top transition-transform duration-[var(--duration-normal)] ease-standard group-hover:scale-[1.02] group-focus-within:scale-[1.02] motion-reduce:transform-none motion-reduce:transition-none"
               height={project.thumbnail.height}
-              loading={imageLoading}
-              sizes="(min-width: 1200px) 34rem, (min-width: 1024px) 45vw, 100vw"
+              sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), (max-width: 1199px) 45vw, 34rem"
               src={project.thumbnail.src}
               width={project.thumbnail.width}
             />

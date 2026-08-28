@@ -129,8 +129,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
                   alt={project.thumbnail.alt}
                   className="aspect-[8/5] h-auto w-full object-cover object-top"
                   height={project.thumbnail.height}
-                  loading="eager"
-                  sizes="(min-width: 1024px) 64rem, 100vw"
+                  sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), 64rem"
                   src={project.thumbnail.src}
                   width={project.thumbnail.width}
                 />
