@@ -42,6 +42,7 @@ export const siteConfig = {
     { label: "Services", href: "/#services", sectionId: "services" },
     { label: "Featured", href: "/#featured-projects", sectionId: "featured-projects" },
     { label: "Experience", href: "/#experience", sectionId: "experience" },
+    { label: "Process", href: "/#process", sectionId: "process" },
   ],
   contact: { label: "Contact", href: "/#contact", sectionId: "contact" },
   socialLinks: [

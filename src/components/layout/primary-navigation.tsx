@@ -150,7 +150,7 @@ export function PrimaryNavigation() {
 
   return (
     <div className="ml-auto flex items-center gap-2">
-      <nav aria-label="Primary navigation" className="hidden lg:block">
+      <nav aria-label="Primary navigation" className="hidden xl:block">
         <ul className="flex list-none items-center gap-1 p-0">
           {siteConfig.homepageNavigation.map((item) => {
             const isActive = pathname === "/" && activeSectionId === item.sectionId;
@@ -200,7 +200,7 @@ export function PrimaryNavigation() {
       <button
         aria-controls="mobile-navigation"
         aria-expanded={isMenuOpen}
-        className="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-lg border border-border bg-surface px-4 py-2 font-semibold text-foreground shadow-sm transition-[background-color,border-color,color] duration-[var(--duration-fast)] ease-standard hover:border-primary hover:text-primary-hover active:bg-muted motion-reduce:transition-none lg:hidden"
+        className="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-lg border border-border bg-surface px-4 py-2 font-semibold text-foreground shadow-sm transition-[background-color,border-color,color] duration-[var(--duration-fast)] ease-standard hover:border-primary hover:text-primary-hover active:bg-muted motion-reduce:transition-none xl:hidden"
         onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
         ref={menuButtonRef}
         type="button"
@@ -210,7 +210,7 @@ export function PrimaryNavigation() {
 
       <div
         className={classNames(
-          "absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg lg:hidden",
+          "absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg xl:hidden",
           isMenuOpen ? "block" : "hidden",
         )}
         id="mobile-navigation"

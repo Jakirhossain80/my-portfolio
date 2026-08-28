@@ -65,7 +65,7 @@ When `prefers-reduced-motion: reduce` is active, smooth scrolling is disabled, a
 
 ## Global navigation
 
-The Phase 10 Header keeps the confirmed brand link and desktop navigation server-rendered around a focused client navigation boundary. Desktop navigation begins at the `lg` breakpoint; smaller widths use an accessible disclosure button and dropdown navigation so controls do not crowd or overflow.
+The Phase 10 Header keeps the confirmed brand link and desktop navigation server-rendered around a focused client navigation boundary. Desktop navigation begins at the `xl` breakpoint; smaller widths use an accessible disclosure button and dropdown navigation so controls do not crowd or overflow. The wider breakpoint preserves the full brand and safe control spacing as implemented homepage destinations are added.
 
 - Route links expose `aria-current="page"`; homepage section links expose `aria-current="location"` when their section is active.
 - The mobile menu moves focus to its first link when opened, closes after navigation or an outside pointer action, and returns focus to the trigger when dismissed with Escape.
@@ -73,7 +73,7 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, and Experience at `/#experience`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, Experience at `/#experience`, and Process at `/#process`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
 
 ## Portfolio Hero
 
@@ -98,6 +98,10 @@ The Featured Project section uses the shared `ProjectCard` and the authoritative
 ## Professional Experience section
 
 The Professional Experience section separates independent technical project experience from current employment in two clearly labelled cards. The wider technical card leads with verified learning and CareerBridge evidence; the supporting employment card uses only the confirmed title and company plus the transferable qualities approved in Phase 19. No timeline, dates, achievements, or detailed shipping duties are inferred. The layout stacks on smaller screens and uses semantic description lists for concise scanning.
+
+## Development Process section
+
+The Phase 20 Development Process section presents six approved stages as a semantic ordered list. Equal-height cards use visible step labels, concise summaries, and two concrete expectations per stage; the grid moves from one to two to three columns without changing the source order. The final stage makes deployment, handover, known limitations, and scope-limited post-delivery support explicit. The section is static, uses semantic tokens, and adds no client-side behavior or decorative motion.
 
 ## Foundational components
 

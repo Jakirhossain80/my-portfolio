@@ -387,7 +387,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - Final approved résumé.
 - Additional genuine CareerBridge case-study screenshots.
 - Public email and contact-form destination/provider details.
-- Hero copy, availability wording, and process approval.
+- Hero copy and availability wording.
 - Employment dates/responsibilities and optional education, certification, and language details.
 - Additional genuine projects.
 - Verified CareerBridge feature status, runtime limitations, responsive behavior, challenges, solutions, and prioritized improvements.
@@ -428,7 +428,7 @@ Phase 15 implements the reusable project model and authoritative CareerBridge re
 | `services` | Stable ID, approved title/problem statement, deliverables, verified technology IDs, and icon key. Phase 14 content is implemented. |
 | `projects` | **Implemented.** Stable ID/slug, category/type, descriptions, lifecycle status, status-aware features and architecture, evidence status, exact roles, Skill IDs, direct links, optional media, planned case-study sections, featured flag, and metadata. |
 | `experience` | Stable ID, role, organization, approved dates, responsibilities, achievements, display order. Only title/company currently have values. |
-| `processSteps` | Stable ID, approved title/description, order; content remains pending. |
+| `processSteps` | **Implemented.** Six approved stages covering requirements, scope and architecture, responsive and accessible interface design, development, testing, deployment, handover, and scope-limited support. |
 | `contactDetails` | Approved public email, social-link references, availability reference, form-enabled flag, privacy copy. Provider credentials must never live here. |
 
 Recommended relationships:
