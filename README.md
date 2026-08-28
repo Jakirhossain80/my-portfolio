@@ -4,7 +4,7 @@ Technical foundation for the professional portfolio of Md. Jakir Hossain, a MERN
 
 ## Current milestone
 
-Phase 1 requirements finalization through Phase 5 foundation verification are complete. Development standards, the Phase 7 design-system foundation, Phase 8 foundational UI components, and the Phase 9 global page layout are implemented; final production-build verification remains dependent on Google Fonts network access. The current `/` route remains a temporary foundation page; final page designs, approved case-study content, and contact delivery are not implemented.
+Phase 1 requirements finalization through Phase 5 foundation verification are complete. Development standards, the Phase 7 design-system foundation, Phase 8 foundational UI components, the Phase 9 global page layout, Phase 10 responsive navigation, and the Phase 11 homepage Hero are implemented; final production-build verification remains dependent on Google Fonts network access. The required `/#contact` navigation target is reserved but does not yet resolve to a rendered section. Remaining homepage sections, approved case-study content, and contact delivery are not implemented.
 
 The route foundation includes:
 
@@ -19,6 +19,7 @@ The route foundation includes:
 - `src/app`: route composition, metadata, route handlers, and framework files
 - `src/components/common`: shared application-level accessibility components
 - `src/components/layout`: reusable container, section, header, and footer layout components
+- `src/components/sections`: scoped homepage sections such as the Hero
 - `src/components/providers`: narrowly scoped client providers such as theme preference context
 - `src/components/ui`: reusable controls and visual primitives
 - `src/components/projects`: project-listing and case-study presentation

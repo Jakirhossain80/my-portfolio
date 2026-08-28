@@ -63,6 +63,22 @@ Use restrained hover effects and purposeful animation, never rely on hover alone
 
 When `prefers-reduced-motion: reduce` is active, smooth scrolling is disabled, animations run once at effectively zero duration, and transitions become effectively immediate. Essential content must never depend on animation for visibility or comprehension.
 
+## Global navigation
+
+The Phase 10 Header keeps the confirmed brand link and desktop navigation server-rendered around a focused client navigation boundary. Desktop navigation begins at the `lg` breakpoint; smaller widths use an accessible disclosure button and dropdown navigation so controls do not crowd or overflow.
+
+- Route links expose `aria-current="page"`; homepage section links expose `aria-current="location"` when their section is active.
+- The mobile menu moves focus to its first link when opened, closes after navigation or an outside pointer action, and returns focus to the trigger when dismissed with Escape.
+- Theme selection exposes System, Light, and Dark as direct native-select options.
+- The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
+- Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
+
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It remains empty because the implemented Hero is already represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+
+## Portfolio Hero
+
+The Phase 11 Hero uses the shared sticky-header offset to fill the available first viewport without hiding content behind navigation. It keeps its readable text measure within the large container, stacks actions below 420px, and uses a restrained staggered CSS entrance that becomes effectively immediate under reduced-motion preferences. Its light/dark background treatment is composed from semantic background and accent tokens. Portrait and résumé controls are intentionally absent until genuine approved assets exist.
+
 ## Foundational components
 
 Phase 8 provides reusable layout primitives under `src/components/layout`, interface primitives under `src/components/ui`, and shared application components under `src/components/common`. These components consume the semantic tokens above and remain presentation-focused; they do not define portfolio-section content.
