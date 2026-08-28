@@ -20,7 +20,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       <span>Theme</span>
       <select
         aria-label="Theme preference"
-        className="cursor-pointer rounded-md border-0 bg-transparent py-0.5 text-foreground outline-none"
+        className="cursor-pointer rounded-md border-0 bg-transparent py-0.5 text-foreground"
         onChange={(event) => {
           const selectedTheme = themes.find((availableTheme) => availableTheme === event.target.value);
 

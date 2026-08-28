@@ -210,7 +210,7 @@ export function PrimaryNavigation() {
 
       <div
         className={classNames(
-          "mobile-navigation-panel absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg xl:hidden",
+          "mobile-navigation-panel absolute top-full right-[var(--page-gutter)] left-[var(--page-gutter)] mt-px max-h-[calc(100svh-var(--sticky-header-offset))] overflow-y-auto overscroll-contain rounded-b-xl border border-t-0 border-border bg-surface p-4 shadow-lg xl:hidden",
         )}
         hidden={!isMenuOpen}
         id="mobile-navigation"
@@ -218,7 +218,7 @@ export function PrimaryNavigation() {
       >
         <nav aria-label="Mobile navigation">
           <ul className="m-0 flex list-none flex-col gap-2 p-0">
-            {siteConfig.homepageNavigation.map((item) => {
+            {siteConfig.homepageNavigation.map((item, index) => {
               const isActive = pathname === "/" && activeSectionId === item.sectionId;
 
               return (
@@ -228,13 +228,14 @@ export function PrimaryNavigation() {
                     className={classNames(navigationLinkClassName(isActive), "w-full")}
                     href={item.href}
                     onClick={closeMenu}
+                    ref={index === 0 ? firstMobileLinkRef : undefined}
                   >
                     {item.label}
                   </Link>
                 </li>
               );
             })}
-            {siteConfig.navigation.map((item, index) => {
+            {siteConfig.navigation.map((item) => {
               const isActive = isRouteActive(item.href);
 
               return (
@@ -244,7 +245,6 @@ export function PrimaryNavigation() {
                     className={classNames(navigationLinkClassName(isActive), "w-full")}
                     href={item.href}
                     onClick={closeMenu}
-                    ref={index === 0 ? firstMobileLinkRef : undefined}
                   >
                     {item.label}
                   </Link>

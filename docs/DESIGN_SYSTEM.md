@@ -63,6 +63,10 @@ Use restrained hover effects and purposeful animation, never rely on hover alone
 
 When `prefers-reduced-motion: reduce` is active, smooth scrolling is disabled, animations run once at effectively zero duration, and transitions become effectively immediate. Essential content must never depend on animation for visibility or comprehension.
 
+## Contrast preferences
+
+Visitors requesting increased contrast receive stronger semantic borders in both themes and persistent link underlines. Windows High Contrast and other forced-colors modes retain system-controlled text, borders, links, and a visible Highlight focus outline. These overrides preserve native controls instead of locking interface colors.
+
 ## Animation and interaction behavior
 
 Phase 26 keeps motion CSS-first and limited to feedback or orientation. Buttons use a one-pixel active press, navigation links retain explicit hover/current/active states, and project cards keep their restrained four-pixel lift and two-percent image scale with matching `focus-within` behavior. The existing short Hero entrance remains the only staggered initial animation.
@@ -74,7 +78,7 @@ Homepage sections use a progressive scroll-linked reveal only when the browser s
 The Phase 10 Header keeps the confirmed brand link and desktop navigation server-rendered around a focused client navigation boundary. Desktop navigation begins at the `xl` breakpoint; smaller widths use an accessible disclosure button and dropdown navigation so controls do not crowd or overflow. The wider breakpoint preserves the full brand and safe control spacing as implemented homepage destinations are added.
 
 - Route links expose `aria-current="page"`; homepage section links expose `aria-current="location"` when their section is active.
-- The mobile menu moves focus to its first link when opened, closes after navigation or an outside pointer action, and returns focus to the trigger when dismissed with Escape.
+- The mobile menu moves focus to its first link when opened, closes after navigation or an outside pointer action, and returns focus to the trigger when dismissed with Escape. Its panel is capped to the available small-viewport height and scrolls internally so every link and the theme selector remain reachable on short screens.
 - Theme selection exposes System, Light, and Dark as direct native-select options.
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
@@ -111,7 +115,7 @@ The Phase 20 Development Process section presents six approved stages as a seman
 
 ## Global footer
 
-The Phase 24 global footer uses the root layout so it appears once across every route. A responsive three-column area presents identity, essential Home and Projects navigation, and direct email, GitHub, and LinkedIn contact paths; it stacks into a clear reading order on smaller screens. The copyright year is generated at render time. Links use visible text, shared focus treatment, and approximately 44-pixel targets, while external profile links retain their new-tab indication. A back-to-top control is omitted because it is optional and would not add enough value to this compact footer.
+The Phase 24 global footer uses the root layout so it appears once across every route. A responsive three-column area presents identity, essential Home and Projects navigation, and direct email, GitHub, and LinkedIn contact paths; it stacks into a clear reading order on smaller screens. Its labelled Contact region is also the stable `#contact` target used by global navigation. The copyright year is generated at render time. Links use visible text, shared focus treatment, and approximately 44-pixel targets, while external profile links retain their new-tab indication. A back-to-top control is omitted because it is optional and would not add enough value to this compact footer.
 
 ## Foundational components
 

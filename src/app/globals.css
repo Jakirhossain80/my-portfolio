@@ -171,14 +171,14 @@ body {
 button, input, textarea, select { font: inherit; }
 :focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
 ::selection { background: var(--accent); color: var(--accent-foreground); }
-main [id] { scroll-margin-top: var(--sticky-header-offset); }
+main [id], footer [id] { scroll-margin-top: var(--sticky-header-offset); }
 
 .container-shell { width: min(100% - (2 * var(--page-gutter)), var(--container-xl)); margin-inline: auto; }
 .section-spacing { padding-block: var(--section-space); }
 .section-spacing-compact { padding-block: var(--section-space-compact); }
 
 .skip-link {
-  position: fixed; z-index: 10; top: 0.75rem; left: 0.75rem;
+  position: fixed; z-index: 50; top: 0.75rem; left: 0.75rem;
   padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-token-md);
   background: var(--surface); box-shadow: var(--shadow-token-md); color: var(--primary-hover); font-weight: 650;
   transform: translateY(calc(-100% - 1rem)); transition: transform var(--duration-fast) var(--ease-token-standard);
@@ -267,5 +267,37 @@ h1 { margin: 0; font-size: var(--font-size-display); line-height: var(--line-hei
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root,
+  [data-theme="light"] {
+    --border: #64748b;
+  }
+
+  [data-theme="dark"] {
+    --border: #94a3b8;
+  }
+
+  .text-link,
+  a {
+    text-decoration-color: currentColor;
+  }
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline-color: Highlight;
+  }
+
+  .skip-link,
+  button,
+  select {
+    border-color: ButtonText;
+  }
+
+  a {
+    text-decoration-color: currentColor;
   }
 }

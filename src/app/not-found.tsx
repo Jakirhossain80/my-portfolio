@@ -9,7 +9,7 @@ export default function NotFound() {
         <p className="route-introduction">
           The address may be incorrect, or the page may not have been published yet.
         </p>
-        <Link className="text-link" href="/">
+        <Link className="text-link inline-flex min-h-11 items-center" href="/">
           Return to the portfolio homepage
         </Link>
       </div>

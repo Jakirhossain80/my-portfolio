@@ -40,8 +40,11 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <div>
-            <h2 className="font-mono text-xs font-semibold tracking-[var(--letter-spacing-label)] text-foreground uppercase">
+          <section aria-labelledby="contact-heading" id="contact" tabIndex={-1}>
+            <h2
+              className="font-mono text-xs font-semibold tracking-[var(--letter-spacing-label)] text-foreground uppercase"
+              id="contact-heading"
+            >
               Contact
             </h2>
             <ul className="mt-3 flex list-none flex-wrap gap-x-5 gap-y-1 p-0 md:flex-col md:items-start">
@@ -58,7 +61,7 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
-          </div>
+          </section>
         </div>
 
         <p className="m-0 pt-6 text-sm text-muted-foreground">
