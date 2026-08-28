@@ -34,6 +34,16 @@ export const projects = [
       "firebase-authentication",
       "firebase-admin",
     ],
+    featuredTechnologyIds: [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwind",
+      "nodejs",
+      "express",
+      "mongodb",
+      "firebase-authentication",
+    ],
     liveUrl: "https://careerbridge-client.vercel.app",
     repositoryUrl: "https://github.com/Jakirhossain80/careerbridge",
     features: [
@@ -111,6 +121,12 @@ export const projects = [
         evidence: "pending-verification",
       },
     ],
+    thumbnail: {
+      src: "/images/projects/careerbridge-homepage.png",
+      alt: "CareerBridge public homepage with a job-search interface",
+      width: 768,
+      height: 480,
+    },
     screenshots: [],
     caseStudy: {
       problem: { status: "planned" },

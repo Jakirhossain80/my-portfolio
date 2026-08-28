@@ -54,6 +54,7 @@ export type Project = {
   featured: boolean;
   status: ProjectStatus;
   technologyIds: readonly SkillId[];
+  featuredTechnologyIds: readonly SkillId[];
   liveUrl: string;
   repositoryUrl: string;
   features: readonly StatusAwareProjectItem[];

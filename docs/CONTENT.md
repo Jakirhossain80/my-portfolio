@@ -318,11 +318,11 @@ Until answered, do not publish fictional “challenge,” “solution,” or mea
 
 ## 21. CareerBridge screenshot inventory
 
-No CareerBridge screenshot exists under `public/images/projects/`. No image from the CareerBridge application was copied, generated, captured, renamed, or edited during this phase.
+A genuine 768 × 480 capture of the public CareerBridge homepage was added for the Phase 16 featured-project thumbnail. It excludes the desktop demo metrics panel and contains no private account data. The screenshot demonstrates the visible public interface only; it does not verify backend behavior or marketing claims shown within the application.
 
 | Key | Path | Page/feature | Format | Dimensions | Suggested placement | Alt-text draft | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `careerbridgeScreenshots` | Not available | Not available | Not available | Not available | Featured project and case study | Draft after real image review | `Asset required` |
+| `careerbridgeThumbnail` | `/images/projects/careerbridge-homepage.png` | Public homepage hero and job-search interface | PNG | 768 × 480 | Featured Projects card | CareerBridge public homepage with a job-search interface | `Confirmed` |
 
 ### Screenshot capture checklist
 
@@ -383,7 +383,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 
 - Approved professional photograph.
 - Final approved résumé.
-- Genuine CareerBridge screenshots.
+- Additional genuine CareerBridge case-study screenshots.
 - Public email and contact-form destination/provider details.
 - Hero copy, availability wording, and process approval.
 - Employment dates/responsibilities and optional education, certification, and language details.
@@ -405,7 +405,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - [ ] Approve the final availability wording and update policy.
 - [x] Define the six Phase 14 service areas and realistic deliverable boundaries.
 - [ ] Supply additional genuine project details, if available.
-- [ ] Supply approved CareerBridge screenshots without private data.
+- [ ] Supply additional approved CareerBridge case-study screenshots without private data.
 - [ ] Confirm the current CareerBridge completion/deployment status feature by feature.
 - [ ] Answer the case-study challenge/solution interview questions.
 - [ ] Confirm CareerBridge known limitations and prioritized improvements.

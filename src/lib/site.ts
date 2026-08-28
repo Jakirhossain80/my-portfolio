@@ -40,6 +40,7 @@ export const siteConfig = {
     { label: "About", href: "/#about", sectionId: "about" },
     { label: "Skills", href: "/#skills", sectionId: "skills" },
     { label: "Services", href: "/#services", sectionId: "services" },
+    { label: "Featured", href: "/#featured-projects", sectionId: "featured-projects" },
   ],
   contact: { label: "Contact", href: "/#contact", sectionId: "contact" },
   socialLinks: [

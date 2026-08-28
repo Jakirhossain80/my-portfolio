@@ -32,6 +32,7 @@ export function ExternalLink({
     >
       <span>{children}</span>
       {showIndicator ? <span aria-hidden="true">↗</span> : null}
+      {target === "_blank" ? <span className="sr-only"> (opens in a new tab)</span> : null}
     </a>
   );
 }
