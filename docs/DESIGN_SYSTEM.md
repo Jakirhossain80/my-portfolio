@@ -73,7 +73,7 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, and Featured at `/#featured-projects`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, and Experience at `/#experience`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
 
 ## Portfolio Hero
 
@@ -94,6 +94,10 @@ The Services section uses six equal-height cards in a responsive one-, two-, or 
 ## Featured project section
 
 The Featured Project section uses the shared `ProjectCard` and the authoritative project record. The card stacks on narrow screens and becomes a balanced image/content grid at large widths. The internal case-study action is visually primary; external Live Site and GitHub links are separated below a border and include visible and assistive new-tab indicators. Card lift and image scale are restrained, mirrored by `focus-within`, and disabled under reduced motion. Missing approved media renders an honest text fallback rather than a fabricated image.
+
+## Professional Experience section
+
+The Professional Experience section separates independent technical project experience from current employment in two clearly labelled cards. The wider technical card leads with verified learning and CareerBridge evidence; the supporting employment card uses only the confirmed title and company plus the transferable qualities approved in Phase 19. No timeline, dates, achievements, or detailed shipping duties are inferred. The layout stacks on smaller screens and uses semantic description lists for concise scanning.
 
 ## Foundational components
 

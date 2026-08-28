@@ -41,6 +41,7 @@ export const siteConfig = {
     { label: "Skills", href: "/#skills", sectionId: "skills" },
     { label: "Services", href: "/#services", sectionId: "services" },
     { label: "Featured", href: "/#featured-projects", sectionId: "featured-projects" },
+    { label: "Experience", href: "/#experience", sectionId: "experience" },
   ],
   contact: { label: "Contact", href: "/#contact", sectionId: "contact" },
   socialLinks: [

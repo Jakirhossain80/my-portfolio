@@ -4,7 +4,7 @@ Technical foundation for the professional portfolio of Md. Jakir Hossain, a MERN
 
 ## Current milestone
 
-Phase 1 requirements finalization through Phase 5 foundation verification are complete. Development standards, the design-system and UI foundations, global page layout, responsive navigation, homepage Hero, About, Skills, Services, and Featured Project sections are implemented; final production-build verification remains dependent on Google Fonts network access. The implemented homepage section targets are active, including `/#featured-projects`. The required `/#contact` target is reserved but does not yet resolve to a rendered section. Remaining homepage sections, detailed case-study content, and contact delivery are not implemented.
+Phase 1 requirements finalization through Phase 5 foundation verification are complete. Development standards, the design-system and UI foundations, global page layout, responsive navigation, homepage Hero, About, Skills, Services, Featured Project, and Professional Experience sections are implemented; final production-build verification remains dependent on Google Fonts network access. The implemented homepage section targets are active through `/#experience`. The required `/#contact` target is reserved but does not yet resolve to a rendered section. Remaining homepage sections, unconfirmed case-study narrative, and contact delivery are not implemented.
 
 The route foundation includes:
 

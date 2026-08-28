@@ -172,6 +172,8 @@ Restrictions:
 | `experience.currentRole.responsibilities` | Empty | `Pending user confirmation` | Do not infer shipping duties from the title. |
 | `experience.currentRole.achievements` | Empty | `Do not invent` | No measurable outcomes supplied. |
 | `experience.developerEmployment` | Empty | `Do not invent` | Project work must not be presented as paid developer employment. |
+| `experience.transferableQualities` | Coordination, communication, documentation, deadline awareness, structured work, and business understanding | `Confirmed` | Phase 19 implementation brief. Present as supporting professional context, not detailed shipping duties or achievements. |
+| `experience.independentDevelopment` | Practical MERN Stack and Next.js learning supported by verified portfolio project work | `Confirmed` | Phase 19 implementation brief and authoritative CareerBridge record. Must remain clearly separate from paid employment. |
 | `education` | Empty | `Pending user confirmation` | Include only if the user wants it displayed and supplies accurate details. |
 | `certifications` | Empty | `Pending user confirmation` | Do not create or infer certifications. |
 | `languages` | Empty | `Pending user confirmation` | Do not infer proficiency from location or conversation language. |
