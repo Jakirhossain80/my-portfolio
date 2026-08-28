@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { StructuredData } from "@/components/common/structured-data";
 import { ProjectCaseStudy } from "@/components/projects/project-case-study";
 import { projects } from "@/data/projects";
+import { getAbsoluteUrl, getCanonicalMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 import { getProjectBySlug } from "@/utils/projects";
 
 type ProjectPageProps = {
@@ -19,19 +22,23 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 
   if (!project) {
     return {
-      title: "Project Not Found | Md. Jakir Hossain",
+      title: { absolute: "Project Not Found | Md. Jakir Hossain" },
       description: "The requested portfolio project case study is not available.",
       robots: { index: false, follow: false },
     };
   }
 
+  const pathname = `/projects/${project.slug}`;
+
   return {
-    title: project.metadata.title,
+    title: { absolute: project.metadata.title },
     description: project.metadata.description,
+    ...getCanonicalMetadata(pathname),
     openGraph: {
       type: "article",
       title: project.metadata.title,
       description: project.metadata.description,
+      ...(getAbsoluteUrl(pathname) ? { url: getAbsoluteUrl(pathname) } : {}),
     },
     twitter: {
       card: "summary",
@@ -49,5 +56,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
-  return <ProjectCaseStudy project={project} />;
+  const pathname = `/projects/${project.slug}`;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.metadata.description,
+    creator: {
+      "@type": "Person",
+      name: siteConfig.name,
+    },
+    ...(getAbsoluteUrl(pathname) ? { url: getAbsoluteUrl(pathname) } : {}),
+    sameAs: [project.liveUrl, project.repositoryUrl],
+  };
+
+  return (
+    <>
+      <StructuredData data={structuredData} />
+      <ProjectCaseStudy project={project} />
+    </>
+  );
 }

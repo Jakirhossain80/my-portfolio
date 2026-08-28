@@ -28,7 +28,11 @@ The route foundation includes:
 - `src/types`: shared TypeScript contracts
 - `src/utils`: small pure lookup helpers
 
-Folders are added only when they have a real responsibility. The sitemap remains deferred until the production domain is confirmed; no environment variables are currently required.
+Folders are added only when they have a real responsibility.
+
+## Environment configuration
+
+`SITE_URL` is optional until the production portfolio origin is confirmed. Set it to the exact absolute `http://` or `https://` production origin, without a trailing slash. When it is absent or invalid, the application safely omits canonical URLs, absolute Open Graph URLs, the robots sitemap reference, and sitemap entries rather than inventing a host.
 
 Project content is centralized in `src/data/projects.ts`. The reusable model distinguishes overall lifecycle status from implemented, in-progress, and planned content; records evidence status separately; references verified technologies through stable Skill IDs; and keeps future media and case-study sections explicit without placeholder claims.
 

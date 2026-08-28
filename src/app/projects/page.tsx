@@ -7,11 +7,23 @@ import { ProjectCard } from "@/components/projects/project-card";
 import { buttonClassName } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { projects } from "@/data/projects";
+import { getAbsoluteUrl, getCanonicalMetadata } from "@/lib/seo";
+
+const title = "Web Development Projects | Md. Jakir Hossain";
+const description =
+  "Explore verified web development projects and case studies by MERN Stack and Next.js developer Md. Jakir Hossain.";
 
 export const metadata: Metadata = {
-  title: "Web Development Projects | Md. Jakir Hossain",
-  description:
-    "Explore verified web development projects and case studies by MERN Stack and Next.js developer Md. Jakir Hossain.",
+  title: { absolute: title },
+  description,
+  ...getCanonicalMetadata("/projects"),
+  openGraph: {
+    type: "website",
+    title,
+    description,
+    ...(getAbsoluteUrl("/projects") ? { url: getAbsoluteUrl("/projects") } : {}),
+  },
+  twitter: { card: "summary", title, description },
 };
 
 export default function ProjectsPage() {

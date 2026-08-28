@@ -363,7 +363,7 @@ For every supplied screenshot, record its repository-relative path, represented 
 | `defaultDescription` | Professional portfolio of Md. Jakir Hossain, a MERN Stack & Next.js web developer based in Dhaka, Bangladesh. | `Confirmed` | Existing foundation metadata; capitalization may be normalized later without changing meaning. |
 | `careerbridgeMetaTitle` | CareerBridge Case Study \| Md. Jakir Hossain | `Draft — approval required` | Final metadata template decision pending. |
 | `careerbridgeMetaDescription` | A case study of CareerBridge, a full-stack job-portal project built with a Next.js client and an Express/MongoDB backend. | `Draft — approval required` | Avoid “production-ready,” impact, scale, or completion claims. |
-| `productionDomain` | Not supplied | `Pending user confirmation` | Required for canonical URLs, sitemap URLs, and absolute social metadata. |
+| `productionDomain` | Not supplied | `Pending user confirmation` | Configure through `SITE_URL`; canonical URLs, sitemap URLs, and absolute social metadata are omitted until confirmed. |
 | `socialPreviewImage` | Not supplied | `Asset required` | Create or use only after explicit approval. |
 
 ## 24. Confirmed content summary
