@@ -1,4 +1,4 @@
-const themeInitializer = `
+export const themeInitializer = `
   try {
     var theme = localStorage.getItem("portfolio-theme");
     if (theme === "light" || theme === "dark") {
@@ -10,7 +10,3 @@ const themeInitializer = `
     document.documentElement.removeAttribute("data-theme");
   }
 `;
-
-export function ThemeInitializer() {
-  return <script dangerouslySetInnerHTML={{ __html: themeInitializer }} />;
-}

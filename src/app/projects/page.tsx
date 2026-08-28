@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="route-shell" id="main-content">
+    <div className="route-shell">
       <div className="route-content">
         <Link className="text-link" href="/">
           Back to portfolio
@@ -31,6 +31,6 @@ export default function ProjectsPage() {
           ))}
         </ul>
       </div>
-    </main>
+    </div>
   );
 }

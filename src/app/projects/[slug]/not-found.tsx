@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ProjectNotFound() {
   return (
-    <main className="route-shell" id="main-content">
+    <div className="route-shell">
       <div className="route-content">
         <p className="foundation-label">Project not found</p>
         <h1>This case study is not available.</h1>
@@ -13,6 +13,6 @@ export default function ProjectNotFound() {
           View available projects
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

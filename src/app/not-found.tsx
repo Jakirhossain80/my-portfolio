@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="route-shell" id="main-content">
+    <div className="route-shell">
       <div className="route-content">
         <p className="foundation-label">Page not found</p>
         <h1>This page is not available.</h1>
@@ -13,6 +13,6 @@ export default function NotFound() {
           Return to the portfolio homepage
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

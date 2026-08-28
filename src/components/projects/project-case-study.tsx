@@ -8,7 +8,7 @@ type ProjectCaseStudyProps = {
 
 export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
   return (
-    <main className="route-shell" id="main-content">
+    <div className="route-shell">
       <article className="route-content">
         <Link className="text-link" href="/projects">
           Back to all projects
@@ -41,6 +41,6 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
           </div>
         </section>
       </article>
-    </main>
+    </div>
   );
 }

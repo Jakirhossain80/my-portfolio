@@ -28,7 +28,7 @@ Available Tailwind color utilities include `bg-background`, `bg-surface`, `bg-su
 - System preference is the default and uses `prefers-color-scheme`.
 - `data-theme="light"` or `data-theme="dark"` on the root element provides an explicit override for the future theme control.
 - The browser `color-scheme` matches the active theme so native controls render appropriately.
-- A persisted theme controller is outside this foundation phase; when added, it must set the root attribute before paint to avoid a theme flash.
+- `ThemeProvider` manages the persisted preference for interactive consumers, while a `beforeInteractive` initializer sets the root attribute before hydration to avoid a theme flash.
 
 ## Typography
 
