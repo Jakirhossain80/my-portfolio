@@ -73,7 +73,7 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about` and Skills at `/#skills`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, and Services at `/#services`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
 
 ## Portfolio Hero
 
@@ -86,6 +86,10 @@ The Phase 12 About section uses a responsive two-column layout at large widths a
 ## Skills section
 
 The Skills section uses four restrained cards in a responsive one- or two-column grid. Each category separates primary technologies from supporting or familiar tools with visible text headings and semantic badge variants, so the distinction does not rely on color. Badges wrap naturally at narrow widths; percentages, ratings, progress indicators, decorative icons, and animation are intentionally absent.
+
+## Services section
+
+The Services section uses six equal-height cards in a responsive one-, two-, or three-column grid. Each card leads with one consistent decorative line icon and uses visible labels for the client need, typical deliverables, and related verified technologies. Service technology badges resolve from the typed Skills inventory. The section avoids guarantees, unsupported outcomes, interactive-card treatment, and unnecessary animation; its evidence CTA links to the existing Projects route.
 
 ## Foundational components
 

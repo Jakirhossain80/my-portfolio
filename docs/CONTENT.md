@@ -157,7 +157,7 @@ Restrictions:
 
 | Key | Current value | Status | Notes |
 | --- | --- | --- | --- |
-| `services` | Final service names, scope, deliverables, exclusions, and engagement model | `Pending user confirmation` | Do not infer commercial services solely from technical skills. |
+| `services` | Six scoped areas: responsive React/Next.js interfaces, MERN application features, REST APIs, Firebase/JWT authentication, API integration, and React/MERN bug fixing | `Confirmed` | Phase 14 implementation brief; deliverables remain realistic and technology claims reference the verified skill inventory. |
 | `serviceAvailability` | Relationship between freelance availability and offered services | `Pending user confirmation` | Must remain accurate and updateable. |
 | `clientEvidence` | Paid client work, testimonials, and outcomes | Empty | `Do not invent` | No approved client evidence has been supplied. |
 
@@ -385,7 +385,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - Final approved résumé.
 - Genuine CareerBridge screenshots.
 - Public email and contact-form destination/provider details.
-- Hero copy, availability wording, services, and process approval.
+- Hero copy, availability wording, and process approval.
 - Employment dates/responsibilities and optional education, certification, and language details.
 - Additional genuine projects.
 - Verified CareerBridge feature status, runtime limitations, responsive behavior, challenges, solutions, and prioritized improvements.
@@ -403,7 +403,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - [ ] Supply certifications, if applicable and intended for display.
 - [ ] Supply language information if it should appear.
 - [ ] Approve the final availability wording and update policy.
-- [ ] Define legitimate services and engagement boundaries.
+- [x] Define the six Phase 14 service areas and realistic deliverable boundaries.
 - [ ] Supply additional genuine project details, if available.
 - [ ] Supply approved CareerBridge screenshots without private data.
 - [ ] Confirm the current CareerBridge completion/deployment status feature by feature.
@@ -423,7 +423,7 @@ No TypeScript objects or interfaces are created in this phase. After content app
 | `personalProfile` | Full name, professional title, location, approved Hero/About copy, biography, employment summary, photograph reference, availability reference. |
 | `socialLinks` | Stable ID, label, exact URL, accessible label, icon key, placement. |
 | `skills` | Stable ID, display name, category ID, description, evidence/status metadata, display priority, CareerBridge relationship. |
-| `services` | Stable ID, approved title/description, audience, deliverables, CTA relationship; content remains pending. |
+| `services` | Stable ID, approved title/problem statement, deliverables, verified technology IDs, and icon key. Phase 14 content is implemented. |
 | `projects` | Stable ID/slug, title, type, approved descriptions, status, roles, features, technology IDs, architecture, links, screenshots, limitations, improvements, featured flag. |
 | `experience` | Stable ID, role, organization, approved dates, responsibilities, achievements, display order. Only title/company currently have values. |
 | `processSteps` | Stable ID, approved title/description, order; content remains pending. |
