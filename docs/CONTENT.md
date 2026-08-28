@@ -414,7 +414,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 
 ## 28. TypeScript conversion notes
 
-No TypeScript objects or interfaces are created in this phase. After content approval, the inventory can map to these future objects:
+Phase 15 implements the reusable project model and authoritative CareerBridge record. Other inventory areas can map to these current or future objects after their content is approved:
 
 | Future object | Likely fields and relationships |
 | --- | --- |
@@ -424,7 +424,7 @@ No TypeScript objects or interfaces are created in this phase. After content app
 | `socialLinks` | Stable ID, label, exact URL, accessible label, icon key, placement. |
 | `skills` | Stable ID, display name, category ID, description, evidence/status metadata, display priority, CareerBridge relationship. |
 | `services` | Stable ID, approved title/problem statement, deliverables, verified technology IDs, and icon key. Phase 14 content is implemented. |
-| `projects` | Stable ID/slug, title, type, approved descriptions, status, roles, features, technology IDs, architecture, links, screenshots, limitations, improvements, featured flag. |
+| `projects` | **Implemented.** Stable ID/slug, category/type, descriptions, lifecycle status, status-aware features and architecture, evidence status, exact roles, Skill IDs, direct links, optional media, planned case-study sections, featured flag, and metadata. |
 | `experience` | Stable ID, role, organization, approved dates, responsibilities, achievements, display order. Only title/company currently have values. |
 | `processSteps` | Stable ID, approved title/description, order; content remains pending. |
 | `contactDetails` | Approved public email, social-link references, availability reference, form-enabled flag, privacy copy. Provider credentials must never live here. |

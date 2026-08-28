@@ -12,7 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <p className="project-meta">{project.projectType}</p>
       <h2>{project.title}</h2>
       <p>{project.summary}</p>
-      <p className="project-status">{project.statusLabel}</p>
+      <p className="project-status">{project.status.label}</p>
       <Link className="text-link" href={`/projects/${project.slug}`}>
         View {project.title} case study
       </Link>

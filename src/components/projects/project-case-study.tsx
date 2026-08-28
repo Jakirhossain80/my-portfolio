@@ -17,7 +17,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
           <p className="foundation-label">Project case study</p>
           <h1>{project.title}</h1>
           <p className="route-introduction">{project.summary}</p>
-          <p className="project-status">{project.statusLabel}</p>
+          <p className="project-status">{project.status.label}</p>
         </header>
 
         <section aria-labelledby="case-study-status" className="route-panel">
@@ -27,17 +27,22 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
             screenshots, and completion claims will be added only after review and approval.
           </p>
           <div className="route-actions">
-            {project.links.map((link) => (
-              <a
-                className="text-link"
-                href={link.href}
-                key={link.href}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              className="text-link"
+              href={project.liveUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View {project.title} live site
+            </a>
+            <a
+              className="text-link"
+              href={project.repositoryUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View {project.title} source
+            </a>
           </div>
         </section>
       </article>
