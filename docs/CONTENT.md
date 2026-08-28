@@ -58,23 +58,23 @@ No environment files, credentials, private emails, authenticated pages, or priva
 
 | Key | Placement | Current value | Status | Source | Notes or restrictions |
 | --- | --- | --- | --- | --- | --- |
-| `aboutIntroduction` | About opening | I’m Md. Jakir Hossain, a web developer based in Dhaka and currently Deputy Manager (Shipping) at Sunman Group. I’m developing my web career toward remote opportunities, ethical freelance work, and professional collaboration. | `Draft — approval required` | Confirmed identity, employment title/company, and career direction | Does not imply that shipping responsibilities or achievements are known. |
-| `aboutSupportingDetails` | About body | Final strengths, motivation, working approach, and career-transition context are pending. | `Pending user confirmation` | Requirements inventory | Do not infer personal history or motivations. |
+| `aboutIntroduction` | About opening | I’m Md. Jakir Hossain, a MERN Stack & Next.js Web Developer based in Dhaka, Bangladesh. I’m building my professional path in web development through practical full-stack learning and project work. | `Confirmed` | Phase 12 implementation brief; confirmed identity, title, and location | Does not imply paid developer employment. |
+| `aboutSupportingDetails` | About body | Connect practical frontend/backend learning with problem-solving, reliability, and structured work; mention Deputy Manager (Shipping), Sunman Group only as supporting professional context. | `Confirmed` | Phase 12 implementation brief | Do not infer shipping duties, dates, achievements, or personal motivation. |
 | `aboutPhotoReuse` | About media | Optional reuse of the approved Hero photograph | `Asset required` | Requirements | Decide during design only after the actual image is supplied. |
 
 ## 7. Professional biography
 
-### Draft biography
+### Implemented biography direction
 
-**Status:** `Draft — approval required`
+**Status:** `Confirmed for the Phase 12 About section`
 
-> Md. Jakir Hossain is a MERN Stack & Next.js Web Developer based in Dhaka, Bangladesh. Alongside his current professional background as Deputy Manager (Shipping) at Sunman Group, he is building a focused web-development portfolio for remote opportunities, ethical freelance work, and professional collaboration. His portfolio centers on modern React and Next.js development, supported by full-stack experience demonstrated through CareerBridge, a job-portal project with separate frontend and backend applications. The portfolio presents completed, in-development, and still-unverified work as separate categories.
+The implemented first-person About copy introduces Md. Jakir Hossain as a MERN Stack & Next.js Web Developer in Dhaka, Bangladesh; presents his transition through practical full-stack learning and project work; and emphasizes problem-solving, reliability, and structured work. His Deputy Manager (Shipping), Sunman Group background appears once as supporting professional context, while web development remains the section's focus.
 
 Restrictions:
 
 - “Full-stack experience” here refers only to repository-backed project work, not confirmed paid employment.
 - Do not add employment dates, shipping responsibilities, achievements, years of experience, education, certifications, awards, or client outcomes without user confirmation.
-- The final first-person or third-person voice remains a user preference decision.
+- The implemented section uses first-person voice.
 
 ## 8. Availability content
 
@@ -374,7 +374,6 @@ For every supplied screenshot, record its repository-relative path, represented 
 ## 25. Draft content requiring approval
 
 - Hero eyebrow, introduction, availability line, and action labels.
-- About introduction and detailed biography.
 - CareerBridge type/status presentation, all six description formats, problem statement, and solution summary.
 - CTA labels and CareerBridge SEO title/description.
 
@@ -386,7 +385,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - Final approved résumé.
 - Genuine CareerBridge screenshots.
 - Public email and contact-form destination/provider details.
-- Final biography, Hero copy, availability wording, services, process, and skill-display approval.
+- Hero copy, availability wording, services, and process approval.
 - Employment dates/responsibilities and optional education, certification, and language details.
 - Additional genuine projects.
 - Verified CareerBridge feature status, runtime limitations, responsive behavior, challenges, solutions, and prioritized improvements.
@@ -398,7 +397,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 - [ ] Supply the final approved résumé file.
 - [ ] Copy/supply the approved professional photograph and confirm publication permission.
 - [ ] Approve or revise the short Hero introduction.
-- [ ] Approve or revise the About introduction and detailed biography.
+- [x] Approve the Phase 12 About introduction and biography direction.
 - [ ] Supply employment dates and responsibilities if they should appear.
 - [ ] Supply education details if they should appear.
 - [ ] Supply certifications, if applicable and intended for display.

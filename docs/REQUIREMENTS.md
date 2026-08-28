@@ -57,8 +57,8 @@ About, Skills, Services, Experience, Process, and Contact belong on `/`; separat
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Header | Establish identity and provide fast navigation. | All | Name or concise brand label, in-page navigation, Projects link, theme control, accessible mobile navigation. | Navigate to work or contact. | Yes | Final navigation labels and compact brand treatment. |
 | 2 | Hero | Communicate role, value, location, availability, and strongest next actions immediately. | Clients, recruiters, remote employers | Name, approved professional title, approved hero copy, Dhaka location, updateable availability message, professional photograph. | View projects; contact; résumé download when supplied. | Yes | Final hero copy, availability wording, photograph asset, résumé asset. |
-| 3 | About | Add professional context and connect the shipping-management background to an honest web-development direction. | Recruiters, employers, clients | Approved biography, current position, career transition/context where approved, strengths without unsupported claims. | Review skills or experience. | Yes | Final biography, employment dates, approved responsibilities and career narrative. |
-| 4 | Skills | Make relevant technical capabilities easy to assess. | Recruiters, employers, technical clients | Confirmed technologies grouped by meaningful categories; proficiency claims only when approved. | Review project evidence. | Yes | Final skill inventory and approved proficiency wording. |
+| 3 | About | Add professional context and connect the shipping-management background to an honest web-development direction. | Recruiters, employers, clients | Approved biography, current position, career transition/context where approved, strengths without unsupported claims. | Review skills or experience. | Yes | Employment dates and responsibilities remain pending if a later section requires them. |
+| 4 | Skills | Make relevant technical capabilities easy to assess. | Recruiters, employers, technical clients | Confirmed technologies grouped by meaningful categories; proficiency claims only when approved. | Review project evidence. | Yes | Implemented with primary and supporting tiers; no numeric proficiency claims. |
 | 5 | Services | Clarify legitimate freelance offerings. | Freelance clients | Approved service categories, boundaries, deliverables, and honest availability. | Discuss a project. | Yes | Final service list, scope language, and engagement expectations. |
 | 6 | Featured Projects | Lead with verifiable work and direct visitors to deeper evidence. | All primary audiences | CareerBridge as primary project; status label; verified summary; approved screenshots; stack; live and repository links; optional genuine additional entries. | View CareerBridge case study or all projects. | Yes | Screenshots, verified feature/status details, genuine additional project content. |
 | 7 | Professional Experience | Establish professional maturity without fabricating developer employment. | Recruiters, remote employers, clients | Deputy Manager (Shipping), Sunman Group; approved responsibilities, transferable skills, and dates when confirmed. | Continue to process or contact. | Yes | Employment dates, detailed responsibilities, any other verified roles. |
@@ -121,12 +121,12 @@ These URLs must not be shortened, substituted, or altered without user approval.
 | Name, location, professional title | Confirmed | Metadata, Hero, About, Footer. |
 | Current role: Deputy Manager (Shipping), Sunman Group | Confirmed at title/company level | About and Professional Experience. |
 | GitHub, LinkedIn, CareerBridge live and repository URLs | Confirmed | Header/footer/contact/project actions as appropriate. |
-| Biography and career narrative | Pending user confirmation | About. |
+| Biography and career narrative | Confirmed by the Phase 12 implementation brief | About. |
 | Hero headline/supporting copy | Pending user confirmation | Hero and possibly metadata. |
 | Availability wording | Draft required | Hero or Header indicator. Must remain updateable and accurate. |
 | Employment dates and responsibilities | Pending user confirmation | Professional Experience. |
 | Education, certifications, and languages | Pending user confirmation | About or Experience only if approved and useful. |
-| Skill inventory and proficiency wording | Pending user confirmation | Skills. |
+| Skill inventory and tier wording | Confirmed by the Skills implementation brief | Skills. |
 | Service descriptions | Pending user confirmation | Services. |
 | Development-process wording | Pending user confirmation | Development Process. |
 | CareerBridge features and current status | Verification required | Project cards and case study. |
@@ -252,10 +252,10 @@ Future enhancements must not be treated as current commitments.
 | --- | --- | --- |
 | Professional photograph | Asset required | Final Hero implementation. |
 | Final résumé | Asset required | Enabling résumé download. |
-| Final biography and hero copy | Pending user confirmation | Publishing final Homepage content. |
+| Hero copy | Pending user confirmation | Publishing final Hero content. The About biography direction was confirmed in Phase 12. |
 | Availability wording | Pending user confirmation | Publishing the indicator. |
 | Employment dates, responsibilities, education, certifications, languages | Pending user confirmation | Publishing relevant About/Experience details. |
-| Skills, services, and process copy | Pending user confirmation | Finalizing those sections. |
+| Services and process copy | Pending user confirmation | Finalizing those sections. Skills grouping and tier wording are confirmed. |
 | CareerBridge screenshots, verified features, and current status | Pending verification/asset | Publishing the project card and case study. |
 | Additional genuine projects | Pending content | Populating more than the CareerBridge entry. |
 | Contact recipient email | Pending decision | Enabling form delivery or displaying email. |

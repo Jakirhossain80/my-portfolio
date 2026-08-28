@@ -73,11 +73,19 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It remains empty because the implemented Hero is already represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about` and Skills at `/#skills`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
 
 ## Portfolio Hero
 
 The Phase 11 Hero uses the shared sticky-header offset to fill the available first viewport without hiding content behind navigation. It keeps its readable text measure within the large container, stacks actions below 420px, and uses a restrained staggered CSS entrance that becomes effectively immediate under reduced-motion preferences. Its light/dark background treatment is composed from semantic background and accent tokens. Portrait and résumé controls are intentionally absent until genuine approved assets exist.
+
+## About section
+
+The Phase 12 About section uses a responsive two-column layout at large widths and a single reading flow on smaller screens. Concise biography paragraphs remain the visual priority; a restrained supporting card makes the approved problem-solving, reliability, and structured-work themes easy to scan. The section uses semantic tokens, existing foundational components, and no decorative media or client-side behavior.
+
+## Skills section
+
+The Skills section uses four restrained cards in a responsive one- or two-column grid. Each category separates primary technologies from supporting or familiar tools with visible text headings and semantic badge variants, so the distinction does not rely on color. Badges wrap naturally at narrow widths; percentages, ratings, progress indicators, decorative icons, and animation are intentionally absent.
 
 ## Foundational components
 
