@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { ExternalLink } from "@/components/common/external-link";
+import { ProjectImage } from "@/components/projects/project-image";
 import { TechnologyBadge } from "@/components/common/technology-badge";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
@@ -125,13 +125,10 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
 
             {project.thumbnail ? (
               <div className="mt-10 overflow-hidden rounded-xl border border-border bg-muted shadow-md">
-                <Image
-                  alt={project.thumbnail.alt}
+                <ProjectImage
                   className="aspect-[8/5] h-auto w-full object-cover object-top"
-                  height={project.thumbnail.height}
+                  image={project.thumbnail}
                   sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), 64rem"
-                  src={project.thumbnail.src}
-                  width={project.thumbnail.width}
                 />
               </div>
             ) : null}

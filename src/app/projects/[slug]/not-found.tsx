@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { buttonClassName } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { siteConfig } from "@/lib/site";
 
 export default function ProjectNotFound() {
   return (
@@ -17,9 +18,14 @@ export default function ProjectNotFound() {
           <p className="mt-5 text-lg leading-[var(--line-height-body)] text-muted-foreground">
             The project may not exist, or its verified case study may not have been published yet.
           </p>
-          <Link className={buttonClassName({ className: "mt-7" })} href="/projects">
-            View available projects
-          </Link>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link className={buttonClassName()} href="/projects">
+              View available projects
+            </Link>
+            <a className={buttonClassName({ variant: "secondary" })} href={siteConfig.emailHref}>
+              Ask about project work
+            </a>
+          </div>
         </Card>
       </Container>
     </Section>

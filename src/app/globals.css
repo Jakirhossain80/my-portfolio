@@ -259,6 +259,12 @@ h1 { margin: 0; font-size: var(--font-size-display); line-height: var(--line-hei
 .text-link { color: var(--primary-hover); font-weight: 650; text-underline-offset: 0.2em; transition: color var(--duration-fast) var(--ease-token-standard); }
 .text-link:hover { color: var(--primary); text-decoration-thickness: 0.14em; }
 .route-actions { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; }
+.loading-placeholder { animation: loading-pulse 1.4s ease-in-out infinite alternate; }
+
+@keyframes loading-pulse {
+  from { opacity: 0.45; }
+  to { opacity: 1; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

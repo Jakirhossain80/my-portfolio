@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { ExternalLink } from "@/components/common/external-link";
+import { ProjectImage } from "@/components/projects/project-image";
 import { TechnologyBadge } from "@/components/common/technology-badge";
 import { Badge } from "@/components/ui/badge";
 import { buttonClassName } from "@/components/ui/button";
@@ -26,13 +26,10 @@ export function ProjectCard({ headingLevel = 2, project }: ProjectCardProps) {
       >
         <div className="overflow-hidden border-b border-border bg-muted lg:border-r lg:border-b-0">
           {project.thumbnail ? (
-            <Image
-              alt={project.thumbnail.alt}
+            <ProjectImage
               className="aspect-[8/5] h-auto w-full object-cover object-top transition-transform duration-[var(--duration-normal)] ease-standard group-hover:scale-[1.02] group-focus-within:scale-[1.02] motion-reduce:transform-none motion-reduce:transition-none"
-              height={project.thumbnail.height}
+              image={project.thumbnail}
               sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), (max-width: 1199px) 45vw, 34rem"
-              src={project.thumbnail.src}
-              width={project.thumbnail.width}
             />
           ) : (
             <div className="flex aspect-[8/5] min-h-48 items-center justify-center p-6 text-center text-sm text-muted-foreground">
