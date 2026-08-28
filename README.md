@@ -9,7 +9,7 @@ Phase 1 requirements finalization through Phase 5 foundation verification are co
 The route foundation includes:
 
 - `/` for the scrolling portfolio homepage
-- `/projects` for the project collection
+- `/projects` for the accessible, server-rendered project directory
 - `/projects/[slug]` for typed, statically generated case studies
 - `/projects/careerbridge` through the dynamic project route
 - `/api/contact` as a disabled provider-neutral endpoint until contact requirements are approved
