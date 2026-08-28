@@ -10,7 +10,7 @@ The route foundation includes:
 
 - `/` for the scrolling portfolio homepage
 - `/projects` for the accessible, server-rendered project directory
-- `/projects/[slug]` for typed, statically generated case studies
+- `/projects/[slug]` for typed, statically generated, status-aware case studies
 - `/projects/careerbridge` through the dynamic project route
 - `/api/contact` as a disabled provider-neutral endpoint until contact requirements are approved
 

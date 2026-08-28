@@ -28,6 +28,16 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   return {
     title: project.metadata.title,
     description: project.metadata.description,
+    openGraph: {
+      type: "article",
+      title: project.metadata.title,
+      description: project.metadata.description,
+    },
+    twitter: {
+      card: "summary",
+      title: project.metadata.title,
+      description: project.metadata.description,
+    },
   };
 }
 

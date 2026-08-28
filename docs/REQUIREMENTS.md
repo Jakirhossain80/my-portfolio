@@ -45,8 +45,8 @@ When audience needs compete, prioritize clear evidence, fast scanning, and direc
 | --- | --- | --- | --- | --- |
 | `/` | App Router page | Primary scrolling portfolio homepage. | Included | Foundation placeholder exists; final sections are not implemented. |
 | `/projects` | App Router page | Complete listing of verified projects and clearly identified future entries. | Included | Accessible project directory implemented from the authoritative typed collection. |
-| `/projects/[slug]` | Dynamic App Router page | Reusable project case-study route with invalid-slug handling. | Included | Typed route and not-found behavior implemented; final presentation pending. |
-| `/projects/careerbridge` | Resolved by `/projects/[slug]` | First detailed case study and primary verified portfolio project. | Included | Authoritative in-development record implemented; detailed case-study presentation remains pending. |
+| `/projects/[slug]` | Dynamic App Router page | Reusable project case-study route with invalid-slug handling. | Included | Status-aware case-study template, per-project metadata, static params, and accessible not-found behavior implemented. |
+| `/projects/careerbridge` | Resolved by `/projects/[slug]` | First detailed case study and primary verified portfolio project. | Included | Verified overview, technologies, roles, feature evidence, and architecture are presented; interview-based narrative and additional screenshots remain pending. |
 | `/api/contact` | Optional Route Handler | Server endpoint for the approved contact form without a separate Express server. | Conditional first release | Planned only after provider, recipient, fields, spam protection, and privacy decisions are approved. |
 
 About, Skills, Services, Experience, Process, and Contact belong on `/`; separate pages for them are not part of the initial architecture.
