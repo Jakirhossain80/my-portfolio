@@ -79,11 +79,11 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 
 - Route links expose `aria-current="page"`; homepage section links expose `aria-current="location"` when their section is active.
 - The mobile menu moves focus to its first link when opened, closes after navigation or an outside pointer action, and returns focus to the trigger when dismissed with Escape. Its panel is capped to the available small-viewport height and scrolls internally so every link and the theme selector remain reachable on short screens.
-- Theme selection exposes System, Light, and Dark as direct native-select options.
+- A compact icon button cycles System, Light, and Dark preferences. Its icon reflects the active preference, while its accessible name announces both the current preference and the result of activation.
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, Experience at `/#experience`, and Process at `/#process`; the implemented Hero is represented by the Home link. The required Contact action points to the implemented `/#contact` section.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. Home appears first in both desktop and mobile navigation, followed by About, Skills, Services, Featured, Experience, Process, Projects, the theme control, and Contact according to the available layout. The required Contact action points to the implemented `/#contact` section.
 
 ## Contact section
 

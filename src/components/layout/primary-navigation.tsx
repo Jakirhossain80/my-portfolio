@@ -11,6 +11,7 @@ import { classNames } from "@/utils/class-names";
 
 let observedSectionId: string | null = null;
 const homepageNavigation = [...siteConfig.homepageNavigation, siteConfig.contact];
+const [homeNavigationItem, ...remainingRouteNavigation] = siteConfig.navigation;
 
 function getHashSectionId() {
   return window.location.pathname === "/" && window.location.hash
@@ -152,6 +153,15 @@ export function PrimaryNavigation() {
     <div className="ml-auto flex items-center gap-2">
       <nav aria-label="Primary navigation" className="hidden xl:block">
         <ul className="flex list-none items-center gap-1 p-0">
+          <li>
+            <Link
+              aria-current={isRouteActive(homeNavigationItem.href) ? "page" : undefined}
+              className={navigationLinkClassName(isRouteActive(homeNavigationItem.href))}
+              href={homeNavigationItem.href}
+            >
+              {homeNavigationItem.label}
+            </Link>
+          </li>
           {siteConfig.homepageNavigation.map((item) => {
             const isActive = pathname === "/" && activeSectionId === item.sectionId;
 
@@ -167,7 +177,7 @@ export function PrimaryNavigation() {
               </li>
             );
           })}
-          {siteConfig.navigation.map((item) => {
+          {remainingRouteNavigation.map((item) => {
             const isActive = isRouteActive(item.href);
 
             return (
@@ -218,7 +228,21 @@ export function PrimaryNavigation() {
       >
         <nav aria-label="Mobile navigation">
           <ul className="m-0 flex list-none flex-col gap-2 p-0">
-            {siteConfig.homepageNavigation.map((item, index) => {
+            <li>
+              <Link
+                aria-current={isRouteActive(homeNavigationItem.href) ? "page" : undefined}
+                className={classNames(
+                  navigationLinkClassName(isRouteActive(homeNavigationItem.href)),
+                  "w-full",
+                )}
+                href={homeNavigationItem.href}
+                onClick={closeMenu}
+                ref={firstMobileLinkRef}
+              >
+                {homeNavigationItem.label}
+              </Link>
+            </li>
+            {siteConfig.homepageNavigation.map((item) => {
               const isActive = pathname === "/" && activeSectionId === item.sectionId;
 
               return (
@@ -228,14 +252,13 @@ export function PrimaryNavigation() {
                     className={classNames(navigationLinkClassName(isActive), "w-full")}
                     href={item.href}
                     onClick={closeMenu}
-                    ref={index === 0 ? firstMobileLinkRef : undefined}
                   >
                     {item.label}
                   </Link>
                 </li>
               );
             })}
-            {siteConfig.navigation.map((item) => {
+            {remainingRouteNavigation.map((item) => {
               const isActive = isRouteActive(item.href);
 
               return (
@@ -261,8 +284,8 @@ export function PrimaryNavigation() {
                 {siteConfig.contact.label}
               </Link>
             </li>
-            <li className="border-t border-border pt-3">
-              <ThemeToggle className="w-full justify-between" />
+            <li className="flex justify-end border-t border-border pt-3">
+              <ThemeToggle />
             </li>
           </ul>
         </nav>
