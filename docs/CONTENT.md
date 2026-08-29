@@ -108,7 +108,7 @@ Do not shorten, normalize, substitute, or guess alternatives for these URLs.
 
 | Key | Intended use | Repository result | Status | Requirements |
 | --- | --- | --- | --- | --- |
-| `profilePhoto` | Primary: Hero. Optional: About. | No image exists under `public/images/profile/`; only `.gitkeep` is present. | `Asset required` | Supply or copy the approved professional photograph before Hero implementation. Do not fabricate a path, generate a substitute, or use stock photography. |
+| `profilePhoto` | Primary: Hero. Optional: About. | `public/images/profile/md-jakir-hossain-profile.webp` (900 × 950 WebP) | `Confirmed and implemented in Hero` | Genuine approved professional photograph supplied by the user. Preserve its natural proportions and use the alternative text “Portrait of Md. Jakir Hossain”. |
 | `resumeFile` | Hero/About/Contact download action | No résumé exists under `public/resume/`; only `.gitkeep` is present. | `Asset required` | Supply the final approved résumé before activating a download. Do not create or infer résumé content. |
 
 When supplied, record the exact repository-relative path, format, publication approval, and accessible link label before implementation.
@@ -371,7 +371,7 @@ For every supplied screenshot, record its repository-relative path, represented 
 - Professional name, display title, location, current employment title/company, career direction, and audiences.
 - Exact GitHub, LinkedIn, CareerBridge live-site, and CareerBridge repository URLs.
 - CareerBridge name, stable `careerbridge` slug, job-portal direction, monorepo client/server shape, exact roles, and repository-backed technology/architecture inventory.
-- Professional photograph, résumé, detailed employment information, and project outcomes remain unconfirmed or unavailable. The public email and listed CareerBridge thumbnail are confirmed separately above.
+- Résumé, detailed employment information, and project outcomes remain unconfirmed or unavailable. The approved professional photograph, public email, and listed CareerBridge thumbnail are confirmed separately above.
 
 ## 25. Draft content requiring approval
 
@@ -383,7 +383,6 @@ Draft content must remain visibly distinguishable from approved facts until the 
 
 ## 26. Missing content and assets
 
-- Approved professional photograph.
 - Final approved résumé.
 - Additional genuine CareerBridge case-study screenshots.
 - Contact-form destination/provider details.
@@ -397,7 +396,7 @@ Draft content must remain visibly distinguishable from approved facts until the 
 
 - [x] Supply the public portfolio email address, or confirm that no email should be displayed.
 - [ ] Supply the final approved résumé file.
-- [ ] Copy/supply the approved professional photograph and confirm publication permission.
+- [x] Copy/supply the approved professional photograph and confirm publication permission.
 - [ ] Approve or revise the short Hero introduction.
 - [x] Approve the Phase 12 About introduction and biography direction.
 - [ ] Supply employment dates and responsibilities if they should appear.

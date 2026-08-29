@@ -50,7 +50,7 @@ The following items are not currently complete:
 - Production Contact-form email delivery
 - Resend configuration
 - Final résumé asset
-- Final professional profile photograph
+- Approved professional profile photograph at `public/images/profile/md-jakir-hossain-profile.webp`
 - Unconfirmed CareerBridge case-study narrative
 - Missing or unapproved CareerBridge screenshots
 - Final production portfolio URL
@@ -944,9 +944,9 @@ to distinguish:
 
 ## Replacing the professional photograph
 
-The final professional photograph is not currently confirmed as implemented.
+The approved professional photograph is implemented in the Hero at:
 
-When the approved image is available:
+When replacing the approved image in the future:
 
 1. Place it under:
 
@@ -1386,7 +1386,6 @@ The following still require user input or external configuration:
 - Final portfolio production URL
 - Final custom domain
 - Final `SITE_URL`
-- Final professional photograph
 - Final résumé
 - Final CareerBridge screenshots
 - Final approval of incomplete CareerBridge narrative

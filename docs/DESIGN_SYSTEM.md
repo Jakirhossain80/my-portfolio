@@ -87,7 +87,7 @@ Only links backed by implemented homepage sections belong in `siteConfig.homepag
 
 ## Portfolio Hero
 
-The Phase 11 Hero uses the shared sticky-header offset to fill the available first viewport without hiding content behind navigation. It keeps its readable text measure within the large container, stacks actions below 420px, and uses a restrained staggered CSS entrance that becomes effectively immediate under reduced-motion preferences. Its light/dark background treatment is composed from semantic background and accent tokens. Portrait and résumé controls are intentionally absent until genuine approved assets exist.
+The Phase 11 Hero uses the shared sticky-header offset to fill the available first viewport without hiding content behind navigation. It keeps its readable text measure within the large container, stacks actions below 420px, and uses a restrained staggered CSS entrance that becomes effectively immediate under reduced-motion preferences. Its light/dark background treatment is composed from semantic background and accent tokens. The approved square professional portrait uses its full natural composition inside a restrained semantic surface, stacks below the content on smaller screens, and occupies the second column on large screens. Résumé controls remain absent until a genuine approved file exists.
 
 ## About section
 
