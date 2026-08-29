@@ -128,6 +128,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
                 <ProjectImage
                   className="aspect-[8/5] h-auto w-full object-cover object-top"
                   image={project.thumbnail}
+                  loading="eager"
                   sizes="(max-width: 639px) calc(100vw - 2.5rem), (max-width: 1023px) calc(100vw - 4rem), 64rem"
                 />
               </div>

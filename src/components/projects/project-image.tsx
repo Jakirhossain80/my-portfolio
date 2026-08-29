@@ -9,10 +9,11 @@ import { classNames } from "@/utils/class-names";
 type ProjectImageProps = {
   className?: string;
   image: ProjectImageData;
+  loading?: "eager" | "lazy";
   sizes: string;
 };
 
-export function ProjectImage({ className, image, sizes }: ProjectImageProps) {
+export function ProjectImage({ className, image, loading = "lazy", sizes }: ProjectImageProps) {
   const [failed, setFailed] = useState(false);
 
   if (failed) {
@@ -36,6 +37,7 @@ export function ProjectImage({ className, image, sizes }: ProjectImageProps) {
       alt={image.alt}
       className={classNames("aspect-[8/5] h-auto w-full object-cover object-top", className)}
       height={image.height}
+      loading={loading}
       onError={() => setFailed(true)}
       sizes={sizes}
       src={image.src}

@@ -12,6 +12,8 @@ type ProjectPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return projects.map(({ slug }) => ({ slug }));
 }
