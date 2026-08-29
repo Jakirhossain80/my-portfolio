@@ -6,10 +6,8 @@ export const siteConfig = {
   email: "jakir.devbd@gmail.com",
   emailHref: "mailto:jakir.devbd@gmail.com",
   description:
-    "Professional portfolio of Md. Jakir Hossain, a MERN Stack and Next.js web developer based in Dhaka, Bangladesh.",
+    "Professional portfolio of Md. Jakir Hossain, a MERN Stack & Next.js Web Developer based in Dhaka, Bangladesh.",
   hero: {
-    valueProposition:
-      "I build responsive, maintainable web applications with React, Next.js, TypeScript, and the MERN stack.",
     technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
   },
   about: {

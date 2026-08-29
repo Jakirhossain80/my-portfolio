@@ -11,7 +11,7 @@ import { getAbsoluteUrl, getCanonicalMetadata } from "@/lib/seo";
 
 const title = "Web Development Projects | Md. Jakir Hossain";
 const description =
-  "Explore verified web development projects and case studies by MERN Stack and Next.js developer Md. Jakir Hossain.";
+  "Explore verified web development projects and case studies by MERN Stack & Next.js Web Developer Md. Jakir Hossain.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

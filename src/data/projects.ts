@@ -6,15 +6,15 @@ export const projects = [
     slug: "careerbridge",
     title: "CareerBridge",
     category: "Job portal",
-    projectType: "Role-based job-platform portfolio project",
+    projectType: "Role-based job-portal portfolio project",
     summary:
-      "CareerBridge is an in-development, role-based job-platform project with separate Next.js and Express applications. Repository-backed functionality is distinguished from workflows that still require runtime verification.",
+      "CareerBridge is a role-based job-portal portfolio project with separate Next.js and Express applications. The case study distinguishes repository-backed implementation from workflows that still require runtime verification.",
     description:
       "CareerBridge brings public job discovery and role-specific recruitment workflows into a full-stack application. Its repository contains a Next.js App Router client, an Express REST API, MongoDB models, Firebase identity verification, and separate experiences for job seekers, employers, administrators, and super administrators.",
     featured: true,
     status: {
       value: "in-development",
-      label: "In development",
+      label: "In development — verification pending",
       detail:
         "Source-backed implementation exists, while final feature completion and deployed end-to-end behavior remain under verification.",
     },
@@ -137,7 +137,7 @@ export const projects = [
     metadata: {
       title: "CareerBridge Case Study | Md. Jakir Hossain",
       description:
-        "An honest case-study foundation for CareerBridge, an in-development role-based job-platform project with a Next.js client and Express/MongoDB backend.",
+        "Review repository-backed implementation, architecture, and verification status for CareerBridge, a role-based job-portal portfolio project.",
     },
   },
 ] as const satisfies readonly Project[];

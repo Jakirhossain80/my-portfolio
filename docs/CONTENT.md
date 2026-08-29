@@ -48,7 +48,7 @@ No environment files, credentials, private emails, authenticated pages, or priva
 | Key | Placement | Current value | Status | Source | Notes or restrictions |
 | --- | --- | --- | --- | --- | --- |
 | `heroEyebrow` | Hero | Dhaka, Bangladesh · MERN Stack & Next.js Web Developer | `Draft — approval required` | Drafted from confirmed location and title | This is an identity label, not an availability claim. Separator may change during design implementation. |
-| `heroIntroduction` | Hero | I build modern web applications with React, Next.js, and the MERN stack, with an emphasis on clear, maintainable user experiences. | `Draft — approval required` | Confirmed title and supplied skills; CareerBridge repository evidence | Avoid adding performance, client, scale, or seniority claims. |
+| `heroIntroduction` | Hero | Not published | `Pending user confirmation` | Phase 32 content verification | The earlier draft was removed from the public Hero. Do not publish supporting Hero copy until approved. |
 | `heroAvailability` | Hero or Header indicator | Open to remote web-development opportunities and selected freelance projects. | `Draft — approval required` | Confirmed career direction | Must remain easy to update and must not be published until it accurately reflects current availability. |
 | `heroPrimaryAction` | Hero | View Projects | `Draft — approval required` | Route requirements | Intended target: `/projects`. |
 | `heroSecondaryAction` | Hero | Contact Me | `Draft — approval required` | Homepage requirements | Intended target: homepage Contact section. Final label may be “Start a Conversation.” |
@@ -187,8 +187,8 @@ Restrictions:
 | `id` | `careerbridge` | `Confirmed` | Portfolio route requirements | Stable future data ID. |
 | `slug` | `careerbridge` | `Confirmed` | `/projects/careerbridge` requirement | Use for the dynamic case-study route. |
 | `title` | CareerBridge | `Confirmed` | Current brief and repository | Preserve capitalization. |
-| `projectType` | Full-stack job-portal portfolio project | `Draft — approval required` | Confirmed job-portal direction; client/server repository evidence | Do not label as paid client work or commercial success. |
-| `projectStatus` | Active development; exact feature-completion and deployment status pending verification | `Draft — approval required` | Active local repository and README roadmap; runtime not verified | Prefer a concise “In development” label until user confirms current release status. |
+| `projectType` | Role-based job-portal portfolio project | `Confirmed` | Confirmed job-portal direction, exact roles, and client/server repository evidence | Do not label as paid client work or commercial success. |
+| `projectStatus` | In development — verification pending | `Repository verified` | Repository roadmap and incomplete workflows; runtime not verified | Keep the verification qualifier until the current release status is confirmed. |
 
 ### Draft descriptions
 
@@ -197,7 +197,7 @@ Restrictions:
 | One-line label | A full-stack job-portal project for job seekers, employers, and platform administrators. | `Draft — approval required` |
 | Short project-card description | CareerBridge is a role-based job-portal project with a Next.js frontend and an Express/MongoDB backend, designed around job discovery, recruitment workflows, and platform administration. | `Draft — approval required` |
 | Medium featured-project description | CareerBridge brings public job discovery and role-specific workflows into a full-stack application. Its repository uses a Next.js App Router client, an Express REST API, MongoDB models, Firebase identity verification, and separate experiences for job seekers, employers, administrators, and super administrators. Feature completion and live behavior still require final verification. | `Draft — approval required` |
-| Case-study overview | CareerBridge is Md. Jakir Hossain’s primary portfolio project: a monorepo job-portal application with separate client and server packages. The source organizes UI routes, query hooks, API services, Express route/controller/service layers, MongoDB models, validation, and role-aware access. The case study should explain the architecture and verified implementation honestly while distinguishing source-backed work from incomplete, untested, or planned behavior. | `Draft — approval required` |
+| Case study overview | CareerBridge is Md. Jakir Hossain’s primary portfolio project: a monorepo job-portal application with separate client and server packages. The source organizes UI routes, query hooks, API services, Express route/controller/service layers, MongoDB models, validation, and role-aware access. The case study should explain the architecture and verified implementation honestly while distinguishing source-backed work from incomplete, untested, or planned behavior. | `Draft — approval required` |
 | Problem statement | Job seekers, employers, and platform administrators need distinct ways to discover opportunities, manage recruitment activity, and govern platform data within one coordinated system. | `Draft — approval required` |
 | Solution summary | CareerBridge approaches this with a role-based Next.js client connected to a versioned Express API, MongoDB-backed domain models, Firebase identity verification, and separate workflows for job seekers, employers, administrators, and super administrators. | `Draft — approval required` |
 
@@ -320,7 +320,7 @@ Until answered, do not publish fictional “challenge,” “solution,” or mea
 
 ## 21. CareerBridge screenshot inventory
 
-A genuine 768 × 480 capture of the public CareerBridge homepage was added for the Phase 16 featured-project thumbnail. It excludes the desktop demo metrics panel and contains no private account data. The screenshot demonstrates the visible public interface only; it does not verify backend behavior or marketing claims shown within the application.
+A genuine 753 × 471 JPEG of the public CareerBridge homepage is used for the featured-project thumbnail. It contains no private account data. The screenshot demonstrates the visible public interface only; it does not verify backend behavior or marketing claims shown within the application.
 
 | Key | Path | Page/feature | Format | Dimensions | Suggested placement | Alt-text draft | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -371,11 +371,11 @@ For every supplied screenshot, record its repository-relative path, represented 
 - Professional name, display title, location, current employment title/company, career direction, and audiences.
 - Exact GitHub, LinkedIn, CareerBridge live-site, and CareerBridge repository URLs.
 - CareerBridge name, stable `careerbridge` slug, job-portal direction, monorepo client/server shape, exact roles, and repository-backed technology/architecture inventory.
-- Professional photograph, résumé, email, screenshots, employment details, and project outcomes are not confirmed merely by this summary.
+- Professional photograph, résumé, detailed employment information, and project outcomes remain unconfirmed or unavailable. The public email and listed CareerBridge thumbnail are confirmed separately above.
 
 ## 25. Draft content requiring approval
 
-- Hero eyebrow, introduction, availability line, and action labels.
+- Hero introduction and availability line. The public Hero currently uses only confirmed identity, location, technology labels, and neutral navigation labels.
 - CareerBridge type/status presentation, all six description formats, problem statement, and solution summary.
 - CTA labels and CareerBridge SEO title/description.
 

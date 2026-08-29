@@ -24,7 +24,7 @@ export function ProjectImage({ className, image, sizes }: ProjectImageProps) {
         <div>
           <p className="font-semibold text-foreground">Project image unavailable</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            The case-study text and project links are still available.
+            The case study text and project links are still available.
           </p>
         </div>
       </div>

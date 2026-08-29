@@ -222,7 +222,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
 
             {hasPendingNarrative ? (
               <Card>
-                <h2 className="text-xl font-bold text-foreground">Case-study development note</h2>
+                <h2 className="text-xl font-bold text-foreground">Case study development note</h2>
                 <p className="mt-3 leading-[var(--line-height-body)] text-muted-foreground">
                   The detailed problem, solution, challenges, and outcomes narrative is not yet
                   published. It will be added only after the remaining evidence and first-hand

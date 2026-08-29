@@ -122,13 +122,13 @@ These URLs must not be shortened, substituted, or altered without user approval.
 | Current role: Deputy Manager (Shipping), Sunman Group | Confirmed at title/company level | About and Professional Experience. |
 | GitHub, LinkedIn, CareerBridge live and repository URLs | Confirmed | Header/footer/contact/project actions as appropriate. |
 | Biography and career narrative | Confirmed by the Phase 12 implementation brief | About. |
-| Hero headline/supporting copy | Pending user confirmation | Hero and possibly metadata. |
+| Hero headline/supporting copy | Supporting copy pending user confirmation | The public Hero uses the confirmed name and professional title without unapproved supporting copy. |
 | Availability wording | Draft required | Hero or Header indicator. Must remain updateable and accurate. |
 | Employment dates and responsibilities | Pending user confirmation | Professional Experience. |
 | Education, certifications, and languages | Pending user confirmation | About or Experience only if approved and useful. |
 | Skill inventory and tier wording | Confirmed by the Skills implementation brief | Skills. |
-| Service descriptions | Pending user confirmation | Services. |
-| Development-process wording | Pending user confirmation | Development Process. |
+| Service descriptions | Confirmed by the Phase 14 implementation brief | Services. |
+| Development-process wording | Confirmed by the implemented process content | Development Process. |
 | CareerBridge features and current status | Verification required | Project cards and case study. |
 | Additional genuine projects | Pending content | Featured Projects and `/projects`. |
 | Contact recipient and public email | Public email confirmed; form recipient pending | Public contact display and future form delivery configuration. |

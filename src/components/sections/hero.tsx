@@ -30,13 +30,9 @@ export function Hero() {
             {siteConfig.professionalTitle}
           </p>
 
-          <p className="hero-reveal hero-reveal-4 mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:text-xl">
-            {siteConfig.hero.valueProposition}
-          </p>
-
           <ul
             aria-label="Primary technologies"
-            className="hero-reveal hero-reveal-5 mt-6 flex list-none flex-wrap gap-2 p-0"
+            className="hero-reveal hero-reveal-4 mt-6 flex list-none flex-wrap gap-2 p-0"
           >
             {siteConfig.hero.technologies.map((technology) => (
               <li key={technology}>
@@ -45,21 +41,21 @@ export function Hero() {
             ))}
           </ul>
 
-          <div className="hero-reveal hero-reveal-6 mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap">
+          <div className="hero-reveal hero-reveal-5 mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap">
             <Link className={buttonClassName({ size: "lg" })} href="/projects">
-              View Projects
+              Projects
             </Link>
             <Link
               className={buttonClassName({ size: "lg", variant: "secondary" })}
               href={siteConfig.contact.href}
             >
-              Contact Me
+              Contact
             </Link>
           </div>
 
           <nav
             aria-label="Professional profiles"
-            className="hero-reveal hero-reveal-7 mt-7 flex flex-wrap gap-x-6 gap-y-3"
+            className="hero-reveal hero-reveal-6 mt-7 flex flex-wrap gap-x-6 gap-y-3"
           >
             {siteConfig.socialLinks.map((link) => (
               <ExternalLink href={link.href} key={link.href}>

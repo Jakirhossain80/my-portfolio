@@ -29,7 +29,7 @@ export const professionalExperience = {
   development: {
     id: "independent-web-development",
     label: "Independent project experience",
-    title: "MERN Stack and Next.js Development",
+    title: "MERN Stack & Next.js Development",
     context: "Practical learning and portfolio projects",
     summary:
       "Building a professional web-development path through independent full-stack learning and verified project work, with CareerBridge as the primary in-development portfolio project.",
