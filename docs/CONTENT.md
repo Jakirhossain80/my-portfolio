@@ -91,7 +91,7 @@ Restrictions:
 | `publicEmail` | Contact, Footer, résumé/contact action, structured metadata if approved | `jakir.devbd@gmail.com` | `Confirmed` | Phase 24 brief | Public contact address. This does not independently approve it as the form-delivery recipient. |
 | `contactFormRecipient` | Server-only contact configuration | Not selected | `Pending user confirmation` | Requirements | May equal the public email but must be approved separately. |
 | `contactProvider` | Server integration | Not selected | `Pending user confirmation` | Requirements | Keep provider-neutral. Do not configure credentials in this phase. |
-| `phoneNumber` | Any public content | Empty | `Do not invent` | No authoritative source | Not required unless the user explicitly approves one. |
+| `phoneNumber` | Contact | `+88 01712119253` | `Confirmed` | Contact-section brief | Link with the exact telephone URI `tel:+8801712119253`. |
 
 ## 10. Confirmed social and project links
 

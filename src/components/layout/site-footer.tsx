@@ -40,10 +40,10 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <section aria-labelledby="contact-heading" id="contact" tabIndex={-1}>
+          <section aria-labelledby="footer-contact-heading">
             <h2
               className="font-mono text-xs font-semibold tracking-[var(--letter-spacing-label)] text-foreground uppercase"
-              id="contact-heading"
+              id="footer-contact-heading"
             >
               Contact
             </h2>

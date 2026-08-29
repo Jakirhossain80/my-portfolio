@@ -3,6 +3,8 @@ export const siteConfig = {
   title: "Md. Jakir Hossain | Portfolio",
   professionalTitle: "MERN Stack & Next.js Web Developer",
   location: "Dhaka, Bangladesh",
+  phone: "+88 01712119253",
+  phoneHref: "tel:+8801712119253",
   email: "jakir.devbd@gmail.com",
   emailHref: "mailto:jakir.devbd@gmail.com",
   description:

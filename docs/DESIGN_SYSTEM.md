@@ -83,7 +83,11 @@ The Phase 10 Header keeps the confirmed brand link and desktop navigation server
 - The sticky Header uses `overflow-x: clip` on the document so horizontal spill remains contained without creating a scrolling context that breaks sticky positioning.
 - Smooth anchor scrolling uses the shared sticky-header offset and becomes immediate under `prefers-reduced-motion: reduce`.
 
-Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, Experience at `/#experience`, and Process at `/#process`; the implemented Hero is represented by the Home link. The required Contact action points to `/#contact`; its destination will become functional when the approved Contact section is implemented.
+Only links backed by implemented homepage sections belong in `siteConfig.homepageNavigation`. It includes About at `/#about`, Skills at `/#skills`, Services at `/#services`, Featured at `/#featured-projects`, Experience at `/#experience`, and Process at `/#process`; the implemented Hero is represented by the Home link. The required Contact action points to the implemented `/#contact` section.
+
+## Contact section
+
+The Contact section uses a responsive two-column layout: verified identity, location, phone, email, GitHub, and LinkedIn details appear first, followed by a clearly labelled form-interface preview. The layout stacks on smaller screens. The preview fields and submit control are disabled, and nearby explanatory copy states that online delivery is unavailable while linking to the confirmed public email. This keeps the first release honest and usable without implying that a provider, recipient, field requirements, spam protection, or privacy behavior has been configured.
 
 ## Portfolio Hero
 
@@ -115,7 +119,7 @@ The Phase 20 Development Process section presents six approved stages as a seman
 
 ## Global footer
 
-The Phase 24 global footer uses the root layout so it appears once across every route. A responsive three-column area presents identity, essential Home and Projects navigation, and direct email, GitHub, and LinkedIn contact paths; it stacks into a clear reading order on smaller screens. Its labelled Contact region is also the stable `#contact` target used by global navigation. The copyright year is generated at render time. Links use visible text, shared focus treatment, and approximately 44-pixel targets, while external profile links retain their new-tab indication. A back-to-top control is omitted because it is optional and would not add enough value to this compact footer.
+The Phase 24 global footer uses the root layout so it appears once across every route. A responsive three-column area presents identity, essential Home and Projects navigation, and direct email, GitHub, and LinkedIn contact paths; it stacks into a clear reading order on smaller screens. The homepage Contact section is the stable `#contact` target used by global navigation. The copyright year is generated at render time. Links use visible text, shared focus treatment, and approximately 44-pixel targets, while external profile links retain their new-tab indication. A back-to-top control is omitted because it is optional and would not add enough value to this compact footer.
 
 ## Foundational components
 
